@@ -1,6 +1,0 @@
-framework module Pods_KBJDemosTests {
-  umbrella header "Pods-KBJDemosTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
