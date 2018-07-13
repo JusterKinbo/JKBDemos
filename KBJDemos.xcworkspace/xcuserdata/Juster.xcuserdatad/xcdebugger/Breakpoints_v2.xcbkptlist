@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KBJDemos/home/TransationAnimation/multiVC/CustomMultiVCAnimation.m"
+            timestampString = "552399601.066504"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-animateTransition:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CustomMultiVCAnimation animateTransition:]"
+                  moduleName = "KBJDemos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juster/codes/KBJDemos/KBJDemos/home/TransationAnimation/multiVC/CustomMultiVCAnimation.m"
+                  timestampString = "552910034.527014"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CustomMultiVCAnimation animateTransition:]"
+                  moduleName = "KBJDemos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juster/codes/KBJDemos/KBJDemos/home/TransationAnimation/multiVC/CustomMultiVCAnimation.m"
+                  timestampString = "552910034.530346"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "460">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
