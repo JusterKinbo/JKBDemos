@@ -11,6 +11,7 @@
 #import "HisSugViewController.h"
 #import "MarcosViewController.h"
 #import "UITableViewCustomCellsController.h"
+#import "RichTextViewController.h"
 
 
 @interface HomeRootViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -39,7 +40,8 @@
 {
         NSArray * animations=@[@{@"title":@"Transition animation",@"class":@"TransitonAnimationViewController"}];
         NSArray * views=@[@{@"title":@"Hissug",@"class":@"HisSugViewController"},
-                          @{@"title":@"custom cells",@"class":@"UITableViewCustomCellsController"}];
+                          @{@"title":@"custom cells",@"class":@"UITableViewCustomCellsController"},
+                          @{@"title":@"rich text",@"class":@"RichTextViewController"},];
         NSArray * marcos=@[@{@"title":@"Marcos",@"class":@"MarcosViewController"}];
 
         //vcs 分组容器
