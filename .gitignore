@@ -17,6 +17,14 @@
   !default.perspectivev3
   xcuserdata/
 
+*.xcuserstate
+project.xcworkspace
+xcuserdata
+UserInterfaceState.xcuserstate
+project.xcworkspace/
+xcuserdata/
+UserInterface.xcuserstate 
+
   ## Other
   *.moved-aside
   *.xcuserstate
