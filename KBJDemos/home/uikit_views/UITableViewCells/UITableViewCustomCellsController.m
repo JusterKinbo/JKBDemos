@@ -232,7 +232,7 @@
         [_tableView insertRowsAtIndexPaths:@[scrollIndexPath] withRowAnimation:UITableViewRowAnimationTop];
     }else {
         [_switchLabel setText:@"关"];
-        NSIndexPath *scrollIndexPath = [NSIndexPath indexPathForRow:1 inSection:0];
+//        NSIndexPath *scrollIndexPath = [NSIndexPath indexPathForRow:1 inSection:0];
 //        [_tableView setContentOffset:CGPointMake(0, 200) animated:YES];
 //        [_tableView scrollToRowAtIndexPath:scrollIndexPath atScrollPosition:UITableViewScrollPositionTop animated:NO];
     }

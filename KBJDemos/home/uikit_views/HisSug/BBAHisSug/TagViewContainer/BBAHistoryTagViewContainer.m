@@ -20,7 +20,7 @@
 #define kSearchHisLabelWith 60
 #define kBtnLargeWidth (18+30)
 
-@interface BBAHistoryTagViewContainer() //<UIAlertViewDelegate>
+@interface BBAHistoryTagViewContainer() ///<UIAlertViewDelegate>
 @end
 
 @implementation BBAHistoryTagViewContainer

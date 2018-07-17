@@ -190,6 +190,14 @@
         NSString * str = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@",_appID];
         [self openURLString:str];
     }
+    
+    if([self checkIfAppExistByPrivateMethod])
+    {
+        NSLog(@"私有方法检测这个应用存在");
+    }else
+    {
+         NSLog(@"私有方法检测这个应用不存在！！！");
+    }
 }
 
 - (void)openURLString:(NSString *)urlStr
@@ -205,11 +213,46 @@
             
         }];
     }
+    
+  
 }
 
 - (void)doSelection
 {
     NSLog(@"点击了 app %@ cell",_downLoad.titleLabel.text);
+}
+
+- (BOOL)checkIfAppExistByPrivateMethod
+{
+    NSString * bundlePath = @"/System/Library/PrivateFrameworks/MobileContainerManager.framework";
+    NSString * encodeBundlePath = [self encodeString:bundlePath];
+    NSBundle *container = [NSBundle bundleWithPath:[self decodeString:encodeBundlePath]];
+    if ([container load]) {
+        NSString * appContainerStr = @"MCMAppContainer";
+        NSString * encodeAppContainer = [self encodeString:appContainerStr];
+        Class appContainer = NSClassFromString([self decodeString:encodeAppContainer]);
+        id test = [appContainer performSelector:@selector(containerWithIdentifier:error:) withObject:@"com.tencent.xin" withObject:nil];
+        if (test) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+//代码混淆--基于base 64
+//base64编码
+- (NSString *)encodeString:(NSString *)string
+{
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *encodedStr = [data base64EncodedStringWithOptions:0];
+    return encodedStr;
+}
+//base64解码
+- (NSString *)decodeString:(NSString *)string
+{
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:string options:0];
+    NSString *decodedStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return decodedStr;
 }
 
 

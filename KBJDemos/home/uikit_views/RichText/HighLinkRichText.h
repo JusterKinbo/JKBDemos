@@ -32,7 +32,7 @@
  */
 @interface HighLinkRichText : UITextView
 
-@property(nonatomic,weak) id <HighLinkRichTextDelegate> delegate;
+@property(nonatomic,weak) id <HighLinkRichTextDelegate> highLinkdelegate;
 
 - (instancetype) initWithFrame:(CGRect)frame text:(NSString*)text;
 

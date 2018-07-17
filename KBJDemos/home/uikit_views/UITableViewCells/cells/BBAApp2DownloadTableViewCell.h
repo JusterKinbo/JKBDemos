@@ -11,7 +11,7 @@
 
 @class BBAApp2DownlaodModel;
 /**
- app直达
+ app直达--支持私有api检测+代码混淆
  app内部如果想要掉起其他应用，需要将被掉起的应用加入info.plist中，key为LSApplicationQueriesSchemes
  如果未加入，在使用canOpenURL时返回false
  如果未安装，那么直接调到appStore--需要制定appID，直接跳过去

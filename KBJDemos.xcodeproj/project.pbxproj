@@ -69,6 +69,8 @@
 		28FDD8E120F8A01100C7A5ED /* BBANormalCellModelWithoutMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDD8E020F8A01100C7A5ED /* BBANormalCellModelWithoutMasonry.m */; };
 		28FDD8E520F8D4D800C7A5ED /* RichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDD8E420F8D4D800C7A5ED /* RichTextViewController.m */; };
 		28FDD8E820F8D5A000C7A5ED /* HighLinkRichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDD8E720F8D5A000C7A5ED /* HighLinkRichText.m */; };
+		28FDD8EA20FD922000C7A5ED /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FDD8E920FD922000C7A5ED /* MobileCoreServices.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		28FDD8EF20FD9A4F00C7A5ED /* PrivateAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDD8EE20FD9A4F00C7A5ED /* PrivateAPIViewController.m */; };
 		76544337D9A7472C3BF2BE45 /* Pods_KBJDemosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67822EBBC36CBD379924C59D /* Pods_KBJDemosUITests.framework */; };
 		B0E5BC59FBDE4498FA56F767 /* Pods_KBJDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C236C63C35F920E063C701 /* Pods_KBJDemos.framework */; };
 		C66C1ABC19FE1CDFDA9F0345 /* Pods_KBJDemosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4296317F05A4F03349412CC6 /* Pods_KBJDemosTests.framework */; };
@@ -212,6 +214,9 @@
 		28FDD8E420F8D4D800C7A5ED /* RichTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichTextViewController.m; sourceTree = "<group>"; };
 		28FDD8E620F8D5A000C7A5ED /* HighLinkRichText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighLinkRichText.h; sourceTree = "<group>"; };
 		28FDD8E720F8D5A000C7A5ED /* HighLinkRichText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighLinkRichText.m; sourceTree = "<group>"; };
+		28FDD8E920FD922000C7A5ED /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		28FDD8ED20FD9A4F00C7A5ED /* PrivateAPIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateAPIViewController.h; sourceTree = "<group>"; };
+		28FDD8EE20FD9A4F00C7A5ED /* PrivateAPIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateAPIViewController.m; sourceTree = "<group>"; };
 		35E1BD8FFCA722D556F9EDE2 /* Pods-KBJDemosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBJDemosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KBJDemosUITests/Pods-KBJDemosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4296317F05A4F03349412CC6 /* Pods_KBJDemosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KBJDemosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5299ED9D8ADB771C2643CBD2 /* Pods-KBJDemosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBJDemosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KBJDemosTests/Pods-KBJDemosTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FDD8EA20FD922000C7A5ED /* MobileCoreServices.framework in Frameworks */,
 				B0E5BC59FBDE4498FA56F767 /* Pods_KBJDemos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +455,7 @@
 		28AD30ED20E720CB00525254 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				28FDD8EC20FD9A1C00C7A5ED /* private_aips */,
 				28FDD8B620EF3BAC00C7A5ED /* uikit_views */,
 				2846CA5C20EB5764003D8943 /* marcos */,
 				28AD30F420E7296D00525254 /* TransationAnimation */,
@@ -571,9 +578,19 @@
 			path = RichText;
 			sourceTree = "<group>";
 		};
+		28FDD8EC20FD9A1C00C7A5ED /* private_aips */ = {
+			isa = PBXGroup;
+			children = (
+				28FDD8ED20FD9A4F00C7A5ED /* PrivateAPIViewController.h */,
+				28FDD8EE20FD9A4F00C7A5ED /* PrivateAPIViewController.m */,
+			);
+			path = private_aips;
+			sourceTree = "<group>";
+		};
 		4C05AB78964CD47BC2B02C11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28FDD8E920FD922000C7A5ED /* MobileCoreServices.framework */,
 				28AD30FA20E739AA00525254 /* Masonry.framework */,
 				C0C236C63C35F920E063C701 /* Pods_KBJDemos.framework */,
 				4296317F05A4F03349412CC6 /* Pods_KBJDemosTests.framework */,
@@ -661,7 +678,7 @@
 		28AD308E20E71A6800525254 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Juster;
 				TargetAttributes = {
 					28AD309520E71A6800525254 = {
@@ -844,6 +861,7 @@
 				28FDD8D120EF76AE00C7A5ED /* UIColor+BBAHexColor.m in Sources */,
 				28FDD8CA20EF3FC500C7A5ED /* BBAApp2DownlaodModel.m in Sources */,
 				2846CA6820ECE534003D8943 /* TransitionContainerViewController.m in Sources */,
+				28FDD8EF20FD9A4F00C7A5ED /* PrivateAPIViewController.m in Sources */,
 				2804717320EA440800A5FF2E /* BBAHisSugPageView.m in Sources */,
 				28FDD8BE20EF3D4500C7A5ED /* BBAAppletTableViewCell.m in Sources */,
 				28AD30DA20E71F0E00525254 /* ContactNavVC.m in Sources */,
@@ -926,6 +944,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -933,6 +952,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -981,6 +1001,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -988,6 +1009,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -20,6 +20,9 @@
 }
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
     UIViewController* toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UIViewController* fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIView * toView=nil; //toView判断是否为present，如果是为bottomVC.view
@@ -178,6 +181,7 @@
         }];
         
     }
+#pragma clang diagnostic pop
 }
 
 - (void)removeSubviewForView:(UIView*)view

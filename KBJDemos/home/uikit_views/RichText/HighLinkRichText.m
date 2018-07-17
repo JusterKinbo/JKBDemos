@@ -128,9 +128,9 @@ static NSString * _dict_match_text = @"matchText";
         NSString * href = dict[_dict_match_text];
         if(NSLocationInRange(offset, range))
         {
-            if(self.delegate && [self.delegate respondsToSelector:@selector(clickOnText: href:)])
+            if(self.highLinkdelegate && [self.highLinkdelegate respondsToSelector:@selector(clickOnText: href:)])
             {
-                [self.delegate clickOnText:text href:href];
+                [self.highLinkdelegate clickOnText:text href:href];
             }
             break;
         }
