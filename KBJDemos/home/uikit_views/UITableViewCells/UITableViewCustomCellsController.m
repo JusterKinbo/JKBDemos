@@ -15,10 +15,14 @@
 #import "BBAAppletCellModel.h"
 #import "BBANormalCellModelWithoutMasonry.h"
 
+//touch
+#import "UITableViewWithTouchesEvent.h"
+#import "UITableViewCustomeCellTouchTableViewDelegate.h"
+
 @interface UITableViewCustomCellsController ()
 {
     NSMutableArray * _datas;
-    UITableView * _tableView;
+    UITableViewWithTouchesEvent * _tableView;
     UILabel * _switchLabel;
 }
 
@@ -29,7 +33,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    _tableView = [[UITableViewWithTouchesEvent alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    _tableView.touchDelegate = [[UITableViewCustomeCellTouchTableViewDelegate alloc]init];
+//    _tableView.dragDelegate = [[UITableViewScrollEventDelegate alloc]init];
     _tableView.tableFooterView = [[UIView alloc]init];//去掉底部多余空白行
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -237,5 +243,26 @@
 //        [_tableView scrollToRowAtIndexPath:scrollIndexPath atScrollPosition:UITableViewScrollPositionTop animated:NO];
     }
 }
+
+#pragma --mark scroll 事件 --> 由于touches不能捕获所有的滑动事件，采用scroll获取时间
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+     NSLog(@"scrollViewWillBeginDragging");
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"scrollViewDidScroll");
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    NSLog(@"scrollViewDidEndDragging");
+}
+
+
+
+
+
 
 @end

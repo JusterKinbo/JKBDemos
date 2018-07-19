@@ -23,4 +23,9 @@
 
 @interface UITableViewCustomCellsController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
+//sug ad ck 针对vc的值
+@property (nonatomic,assign) NSInteger touchMoveNumber;
+@property (nonatomic,assign) CGFloat touchMoveTotalTime;
+
 @end
+

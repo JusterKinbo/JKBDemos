@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UITableViewModelBaseCell.h"
+#import "BBADirectBaseTableViewModel.h"
 
 
 /**
  app 直达下载 cell model
  */
-@interface BBAApp2DownlaodModel : UITableViewModelBaseCell
+@interface BBAApp2DownlaodModel : BBADirectBaseTableViewModel
 
 @property (nonatomic,copy) NSString * iconURL;//图片url
 @property (nonatomic,copy) NSString * name;//app名称

@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UITableViewModelBaseCell.h"
+#import "BBADirectBaseTableViewModel.h"
 
 
 /**
  applet cell model
  */
-@interface BBAAppletCellModel : UITableViewModelBaseCell
+@interface BBAAppletCellModel : BBADirectBaseTableViewModel
 
 @property (nonatomic,copy) NSString * iconURL;//图片url
 @property (nonatomic,copy) NSString * name;//applet 名称

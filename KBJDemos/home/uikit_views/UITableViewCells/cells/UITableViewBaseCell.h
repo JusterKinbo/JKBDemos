@@ -18,7 +18,10 @@
 @class UITableViewModelBaseCell;
 @interface UITableViewBaseCell : UITableViewCell
 
+//安装事件
 - (void)setModelItem:(UITableViewModelBaseCell *)modal;
 - (void)updateUI;
 - (void)doSelection;
+
+
 @end

@@ -26,7 +26,10 @@
     UIButton * _downLoad;
     NSString * _appScheme;
     NSString * _appID;
+    NSString * _rcv_url;
 }
+
+
 @end
 
 @implementation BBAApp2DownloadTableViewCell
@@ -55,7 +58,11 @@
         [self.contentView addSubview:_downLoad];
         
         //添加事件
-        [_downLoad addTarget:self action:@selector(download) forControlEvents:UIControlEventTouchUpInside];
+        
+        UITapGestureRecognizer * downloadTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(downloadTap:)];
+        [_downLoad addGestureRecognizer:downloadTap];
+        //添加手势后add target 失效
+//        [_downLoad addTarget:self action:@selector(download:) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
 }
@@ -109,34 +116,34 @@
     }];
     CGSize nameSize = [self textSize:_name.text fontSize:kNameSize_BBAApp2DownloadTableViewCell];
     [_name mas_makeConstraints:^(MASConstraintMaker *make) {//相对于icon
-        make.left.equalTo(_icon.mas_right).mas_offset(8);
-        make.top.equalTo(_icon.mas_top).mas_offset(0);
+        make.left.equalTo(self->_icon.mas_right).mas_offset(8);
+        make.top.equalTo(self->_icon.mas_top).mas_offset(0);
         make.width.mas_equalTo(nameSize.width+1);
     }];
     CGSize appSize = [self textSize:_app.text fontSize:kAppSize_BBAApp2DownloadTableViewCell];
     [_app mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(_name.mas_right).mas_offset(7);
-        make.centerY.equalTo(_name.mas_centerY);
+        make.left.equalTo(self->_name.mas_right).mas_offset(7);
+        make.centerY.equalTo(self->_name.mas_centerY);
         make.width.mas_equalTo(appSize.width + 8);
         make.height.mas_equalTo(appSize.height + 6);
     }];
     CGSize volumeSize = [self textSize:_volume.text fontSize:kSubtitleSize_BBAApp2DownloadTableViewCell];
     [_volume mas_makeConstraints:^(MASConstraintMaker *make) {//相对于name
-        make.left.equalTo(_name.mas_left).mas_offset(0);
-        make.bottom.equalTo(_icon.mas_bottom).mas_offset(0);
+        make.left.equalTo(self->_name.mas_left).mas_offset(0);
+        make.bottom.equalTo(self->_icon.mas_bottom).mas_offset(0);
         make.width.mas_equalTo(volumeSize.width+1);
     }];
     
     [_bottomVerticalLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(_volume.mas_right).mas_offset(10);
+        make.left.equalTo(self->_volume.mas_right).mas_offset(10);
         make.height.mas_equalTo(12);
-        make.centerY.equalTo(_volume.mas_centerY);
+        make.centerY.equalTo(self->_volume.mas_centerY);
         make.width.mas_equalTo(1);
     }];
     CGSize versionSize = [self textSize:_version.text fontSize:kSubtitleSize_BBAApp2DownloadTableViewCell];
     [_version mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(_bottomVerticalLine.mas_right).mas_offset(10);
-        make.centerY.equalTo(_volume.mas_centerY);
+        make.left.equalTo(self->_bottomVerticalLine.mas_right).mas_offset(10);
+        make.centerY.equalTo(self->_volume.mas_centerY);
         make.width.mas_equalTo(versionSize.width+1);
     }];
     [_downLoad mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -174,9 +181,16 @@
     return [text sizeWithAttributes:attDic];
 }
 
+
+-(void)downloadTap:(UITapGestureRecognizer *)sender{
+    CGPoint point = [sender locationInView:sender.view];
+    NSLog(@"handleSingleTap!pointx:%f,y:%f",point.x,point.y);
+    [self download:sender.view];
+}
 //事件
-- (void)download
+- (void)download:(id)sender
 {
+    NSLog(@"button down laod");
     //创建一个url，这个url就是WXApp的url，记得加上：//
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@://",_appScheme]];
     if([[UIApplication sharedApplication] canOpenURL:url])
@@ -220,6 +234,10 @@
 - (void)doSelection
 {
     NSLog(@"点击了 app %@ cell",_downLoad.titleLabel.text);
+   
+//    [self generateCRCWith:@"?url=test." imTimeSign:20 pressTime:10 touchX:10];
+    NSLog(@"%ld====",[self generateCRCWith:@"?url=test." imTimeSign:20 pressTime:10 touchX:10]);
+    NSLog(@"%ld====",[self generateCRCWith:@"link?url=lala" imTimeSign:20 pressTime:10 touchX:10]);
 }
 
 - (BOOL)checkIfAppExistByPrivateMethod
@@ -255,6 +273,81 @@
     return decodedStr;
 }
 
+
+/*
+ 翻译这个函数
+ function getCheckCode(href, imTimeSign, pressTime, touchX) {
+     var urlSearch;
+     var urlReg = /\?url\=([^\.]+)\./;
+     var urlMix = /link\?url\=([^\&]+)/;
+     var checkCode = 0;
+     urlSearch = urlMix.exec(href) || urlReg.exec(href);
+     if (urlSearch) {
+         var num = (((pressTime * imTimeSign) % 99) + 9);
+         var iDomainLen = urlSearch[1].length;
+         if (urlMix.exec(href)) {
+             iDomainLen = urlSearch[1].length < 20 ? urlSearch[1].length : 20;
+         }
+         for (var x = 0; x < num; ++x) {
+             checkCode += urlSearch[1].charCodeAt((touchX * x) % iDomainLen);
+         }
+        return checkCode;
+     }
+     return false;
+ }
+ */
+
+
+- (NSUInteger)generateCRCWith:(NSString *)href imTimeSign:(float)imTimeSign pressTime:(float)pressTime touchX:(float)touchX
+{
+    NSString *urlReg = @"\\?url=([^\\.]+)\\.";
+    NSString *urlMix = @"link\\?url=([^&]+)";
+    NSString * urlRegMatchStr = [self secondMatchString:href withRegexStri:urlReg];
+    NSString * urlMixMatchStr = [self secondMatchString:href withRegexStri:urlMix];
+    NSMutableArray * matchArr = [@[] mutableCopy];
+    if(urlMixMatchStr) [matchArr addObject:urlMixMatchStr];//优先保证mix
+    if(urlRegMatchStr) [matchArr addObject:urlRegMatchStr];
+    NSString * urlMatch = nil;
+    //保证||判断，那个有值用哪个，优先使用第一个值
+    for (NSString * match in matchArr) {
+        if(match)
+        {
+            urlMatch = match;break;
+        }
+    }
+    if(urlMatch)
+    {
+        NSUInteger totalTime = pressTime * imTimeSign;
+        NSUInteger num = ((totalTime % 99) + 9);
+        NSUInteger iDomainLen = urlMatch.length;
+        if(urlMixMatchStr)
+        {
+            iDomainLen = urlMatch.length < 20 ? urlMatch.length : 20;
+        }
+        NSUInteger checkCode = 0;
+        for (int x = 0; x < num; ++x) {
+            NSInteger X = touchX * x;
+            checkCode += [urlMatch characterAtIndex:( X % iDomainLen)];
+        }
+        return checkCode;
+    }
+    return 0;
+}
+
+- (NSString *)secondMatchString:(NSString *)str withRegexStri:(NSString *)regex
+{
+    NSError *error = NULL;
+    NSString * matchString = nil;
+    NSRegularExpression *regexReg = [NSRegularExpression regularExpressionWithPattern:regex options:NSRegularExpressionCaseInsensitive error:&error];
+    NSTextCheckingResult *result = [regexReg firstMatchInString:str options:0 range:NSMakeRange(0, [str length])];
+    if([result numberOfRanges]==2)
+    {
+        NSRange r = [result rangeAtIndex:1];
+        matchString = [str substringWithRange:r];
+    }
+    NSLog(@"match string ==> %@",matchString);
+    return matchString;
+}
 
 
 @end

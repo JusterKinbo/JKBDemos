@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UITableViewBaseCell.h"
+#import "BBADirectBaseTableViewCell.h"
 
-@interface BBAAppletTableViewCell : UITableViewBaseCell
+@interface BBAAppletTableViewCell : BBADirectBaseTableViewCell
 
 @end

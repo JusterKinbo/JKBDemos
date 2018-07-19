@@ -32,6 +32,11 @@
 		2846CA6520ECE520003D8943 /* TransitionBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2846CA6420ECE520003D8943 /* TransitionBottomViewController.m */; };
 		2846CA6820ECE534003D8943 /* TransitionContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2846CA6720ECE534003D8943 /* TransitionContainerViewController.m */; };
 		2846CA6C20ECE7B3003D8943 /* CustomMultiVCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2846CA6B20ECE7B3003D8943 /* CustomMultiVCAnimation.m */; };
+		2885EE95210031E60032426F /* BBADirectBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EE94210031E60032426F /* BBADirectBaseTableViewCell.m */; };
+		2885EE98210032CC0032426F /* BBADirectBaseTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EE97210032CC0032426F /* BBADirectBaseTableViewModel.m */; };
+		2885EE9B2100386B0032426F /* UITableViewCustomeCellTouchTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EE9A2100386B0032426F /* UITableViewCustomeCellTouchTableViewDelegate.m */; };
+		2885EE9F21003C1E0032426F /* UITableViewWithTouchesEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EE9E21003C1E0032426F /* UITableViewWithTouchesEvent.m */; };
+		2885EEA2210040C50032426F /* UITableViewScrollEventDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEA1210040C50032426F /* UITableViewScrollEventDelegate.m */; };
 		28AD309B20E71A6800525254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309A20E71A6800525254 /* AppDelegate.m */; };
 		28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309D20E71A6800525254 /* TransitonAnimationViewController.m */; };
 		28AD30A420E71A6800525254 /* KBJDemos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28AD30A220E71A6800525254 /* KBJDemos.xcdatamodeld */; };
@@ -140,6 +145,17 @@
 		2846CA6720ECE534003D8943 /* TransitionContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionContainerViewController.m; sourceTree = "<group>"; };
 		2846CA6A20ECE7B3003D8943 /* CustomMultiVCAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomMultiVCAnimation.h; sourceTree = "<group>"; };
 		2846CA6B20ECE7B3003D8943 /* CustomMultiVCAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomMultiVCAnimation.m; sourceTree = "<group>"; };
+		2885EE93210031E60032426F /* BBADirectBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBADirectBaseTableViewCell.h; sourceTree = "<group>"; };
+		2885EE94210031E60032426F /* BBADirectBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBADirectBaseTableViewCell.m; sourceTree = "<group>"; };
+		2885EE96210032CC0032426F /* BBADirectBaseTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBADirectBaseTableViewModel.h; sourceTree = "<group>"; };
+		2885EE97210032CC0032426F /* BBADirectBaseTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBADirectBaseTableViewModel.m; sourceTree = "<group>"; };
+		2885EE992100386B0032426F /* UITableViewCustomeCellTouchTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewCustomeCellTouchTableViewDelegate.h; sourceTree = "<group>"; };
+		2885EE9A2100386B0032426F /* UITableViewCustomeCellTouchTableViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewCustomeCellTouchTableViewDelegate.m; sourceTree = "<group>"; };
+		2885EE9C210038A60032426F /* TouchTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchTableViewDelegate.h; sourceTree = "<group>"; };
+		2885EE9D21003C1E0032426F /* UITableViewWithTouchesEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewWithTouchesEvent.h; sourceTree = "<group>"; };
+		2885EE9E21003C1E0032426F /* UITableViewWithTouchesEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewWithTouchesEvent.m; sourceTree = "<group>"; };
+		2885EEA0210040C50032426F /* UITableViewScrollEventDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewScrollEventDelegate.h; sourceTree = "<group>"; };
+		2885EEA1210040C50032426F /* UITableViewScrollEventDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewScrollEventDelegate.m; sourceTree = "<group>"; };
 		28AD309620E71A6800525254 /* KBJDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBJDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AD309920E71A6800525254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28AD309A20E71A6800525254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -364,6 +380,25 @@
 			path = multiVC;
 			sourceTree = "<group>";
 		};
+		2885EE922100317B0032426F /* direct_cells */ = {
+			isa = PBXGroup;
+			children = (
+				28FDD8BC20EF3D4500C7A5ED /* BBAAppletTableViewCell.h */,
+				28FDD8BD20EF3D4500C7A5ED /* BBAAppletTableViewCell.m */,
+				28FDD8BF20EF3D5900C7A5ED /* BBAApp2DownloadTableViewCell.h */,
+				28FDD8C020EF3D5900C7A5ED /* BBAApp2DownloadTableViewCell.m */,
+				28FDD8C520EF3FA600C7A5ED /* BBAAppletCellModel.h */,
+				28FDD8C620EF3FA600C7A5ED /* BBAAppletCellModel.m */,
+				28FDD8C820EF3FC500C7A5ED /* BBAApp2DownlaodModel.h */,
+				28FDD8C920EF3FC500C7A5ED /* BBAApp2DownlaodModel.m */,
+				2885EE93210031E60032426F /* BBADirectBaseTableViewCell.h */,
+				2885EE94210031E60032426F /* BBADirectBaseTableViewCell.m */,
+				2885EE96210032CC0032426F /* BBADirectBaseTableViewModel.h */,
+				2885EE97210032CC0032426F /* BBADirectBaseTableViewModel.m */,
+			);
+			path = direct_cells;
+			sourceTree = "<group>";
+		};
 		28AD308D20E71A6800525254 = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +564,13 @@
 				28FDD8BB20EF3CD400C7A5ED /* cells */,
 				28FDD8B820EF3C3B00C7A5ED /* UITableViewCustomCellsController.h */,
 				28FDD8B920EF3C3B00C7A5ED /* UITableViewCustomCellsController.m */,
+				2885EE9C210038A60032426F /* TouchTableViewDelegate.h */,
+				2885EEA0210040C50032426F /* UITableViewScrollEventDelegate.h */,
+				2885EEA1210040C50032426F /* UITableViewScrollEventDelegate.m */,
+				2885EE992100386B0032426F /* UITableViewCustomeCellTouchTableViewDelegate.h */,
+				2885EE9A2100386B0032426F /* UITableViewCustomeCellTouchTableViewDelegate.m */,
+				2885EE9D21003C1E0032426F /* UITableViewWithTouchesEvent.h */,
+				2885EE9E21003C1E0032426F /* UITableViewWithTouchesEvent.m */,
 			);
 			path = UITableViewCells;
 			sourceTree = "<group>";
@@ -536,14 +578,7 @@
 		28FDD8BB20EF3CD400C7A5ED /* cells */ = {
 			isa = PBXGroup;
 			children = (
-				28FDD8BC20EF3D4500C7A5ED /* BBAAppletTableViewCell.h */,
-				28FDD8BD20EF3D4500C7A5ED /* BBAAppletTableViewCell.m */,
-				28FDD8BF20EF3D5900C7A5ED /* BBAApp2DownloadTableViewCell.h */,
-				28FDD8C020EF3D5900C7A5ED /* BBAApp2DownloadTableViewCell.m */,
-				28FDD8C520EF3FA600C7A5ED /* BBAAppletCellModel.h */,
-				28FDD8C620EF3FA600C7A5ED /* BBAAppletCellModel.m */,
-				28FDD8C820EF3FC500C7A5ED /* BBAApp2DownlaodModel.h */,
-				28FDD8C920EF3FC500C7A5ED /* BBAApp2DownlaodModel.m */,
+				2885EE922100317B0032426F /* direct_cells */,
 				28FDD8D520EF891300C7A5ED /* UITableViewModelBaseCell.h */,
 				28FDD8D620EF891300C7A5ED /* UITableViewModelBaseCell.m */,
 				28FDD8D820EF89E200C7A5ED /* UITableViewBaseCell.h */,
@@ -852,6 +887,7 @@
 				28FDD8D720EF891300C7A5ED /* UITableViewModelBaseCell.m in Sources */,
 				28AD30E020E71F5300525254 /* MineNavVC.m in Sources */,
 				28AD30E320E71F9E00525254 /* ContactRootViewController.m in Sources */,
+				2885EE95210031E60032426F /* BBADirectBaseTableViewCell.m in Sources */,
 				28AD30FD20E7992300525254 /* TrasitionedToViewController.m in Sources */,
 				2804716F20EA440800A5FF2E /* BBAPrivateHissugTagViewContainer.m in Sources */,
 				28AD30E920E71FBD00525254 /* MineRootViewController.m in Sources */,
@@ -859,7 +895,9 @@
 				28AD30F720E72A4B00525254 /* HisSugViewController.m in Sources */,
 				28FDD8DE20F89F7C00C7A5ED /* BBANormalCellWithoutMasonry.m in Sources */,
 				28FDD8D120EF76AE00C7A5ED /* UIColor+BBAHexColor.m in Sources */,
+				2885EE9F21003C1E0032426F /* UITableViewWithTouchesEvent.m in Sources */,
 				28FDD8CA20EF3FC500C7A5ED /* BBAApp2DownlaodModel.m in Sources */,
+				2885EEA2210040C50032426F /* UITableViewScrollEventDelegate.m in Sources */,
 				2846CA6820ECE534003D8943 /* TransitionContainerViewController.m in Sources */,
 				28FDD8EF20FD9A4F00C7A5ED /* PrivateAPIViewController.m in Sources */,
 				2804717320EA440800A5FF2E /* BBAHisSugPageView.m in Sources */,
@@ -879,7 +917,9 @@
 				28AD30D020E71B5F00525254 /* HomeRootViewController.m in Sources */,
 				28AD30AC20E71A6800525254 /* main.m in Sources */,
 				2804717F20EA446100A5FF2E /* BBASuggestDataItem.m in Sources */,
+				2885EE9B2100386B0032426F /* UITableViewCustomeCellTouchTableViewDelegate.m in Sources */,
 				28FDD8C720EF3FA600C7A5ED /* BBAAppletCellModel.m in Sources */,
+				2885EE98210032CC0032426F /* BBADirectBaseTableViewModel.m in Sources */,
 				2804717120EA440800A5FF2E /* BBAHistoryTagViewContainer.m in Sources */,
 				2804716A20EA440800A5FF2E /* BBAAppCommonInfo.m in Sources */,
 				28AD30D720E71E8700525254 /* HomeNavVC.m in Sources */,
