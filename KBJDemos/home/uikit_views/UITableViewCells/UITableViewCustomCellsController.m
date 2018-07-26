@@ -77,8 +77,18 @@
     BBANormalCellModelWithoutMasonry * normalCell = [[BBANormalCellModelWithoutMasonry alloc]init];
     normalCell.cellClassName = @"BBANormalCellWithoutMasonry";
     
+    BBAAppletCellModel * appletModel_relativePos = [[BBAAppletCellModel alloc]init];
+    appletModel_relativePos.iconURL = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531116656896&di=37d2ce47c894a6b1ecf433fd5866d7f1&imgtype=0&src=http%3A%2F%2Fs3.zaiseoul.com%2Fupload%2F2015%2F08%2F20%2F520352.png";
+    appletModel_relativePos.name = @"百宝箱";
+    appletModel_relativePos.applet = @"智能小程序";
+    appletModel_relativePos.personNumber = @"2.3万人";
+    appletModel_relativePos.detail = @"千万宝物等你来拿1213323244455";
+    appletModel_relativePos.cellClassName = @"BBADirectAppletTableViewCell_RelativePos";
     
-    _datas = [@[wxModel,wzryModel,appletModel,normalCell] mutableCopy];
+
+    
+    
+    _datas = [@[wxModel,wzryModel,appletModel,normalCell,appletModel_relativePos] mutableCopy];
     
     [self switchToTop];
     

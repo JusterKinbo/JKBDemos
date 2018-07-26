@@ -19,6 +19,13 @@
  
  boxapp里面cell地下的seperator有可能显示不出来，调用super view的updateui方法就好了
  猜测是layoutIfNeed导致layoutsubview调用了，需要使用父view的layoutSubviews方法
+ 
+ 
+ *** autolayout / masonry uitableviewcell 布局 --针对iOS10布局错乱问题
+ tableview.rowheight 设置为automaticDemision
+ estimatedHeight 设置为最大才可以
+ 
+ 涉及到cell更新，里面需要使用mas_update
  */
 
 @interface UITableViewCustomCellsController : UIViewController<UITableViewDelegate,UITableViewDataSource>
