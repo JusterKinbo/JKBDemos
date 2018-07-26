@@ -19,6 +19,8 @@
 #import "UITableViewWithTouchesEvent.h"
 #import "UITableViewCustomeCellTouchTableViewDelegate.h"
 
+#import "PureButtonTableViewCell.h"
+
 @interface UITableViewCustomCellsController ()
 {
     NSMutableArray * _datas;
@@ -37,6 +39,8 @@
     _tableView.touchDelegate = [[UITableViewCustomeCellTouchTableViewDelegate alloc]init];
 //    _tableView.dragDelegate = [[UITableViewScrollEventDelegate alloc]init];
     _tableView.tableFooterView = [[UIView alloc]init];//去掉底部多余空白行
+    _tableView.estimatedRowHeight = 200;
+    _tableView.rowHeight = UITableViewAutomaticDimension;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorInset = UIEdgeInsetsMake(0, 15, 0, 15);//两侧留白
@@ -85,10 +89,10 @@
     appletModel_relativePos.detail = @"千万宝物等你来拿1213323244455";
     appletModel_relativePos.cellClassName = @"BBADirectAppletTableViewCell_RelativePos";
     
-
+    UITableViewModelBaseCell * pureBtn = [[UITableViewModelBaseCell alloc]init];
+    pureBtn.cellClassName = @"PureButtonTableViewCell";
     
-    
-    _datas = [@[wxModel,wzryModel,appletModel,normalCell,appletModel_relativePos] mutableCopy];
+    _datas = [@[wxModel,wzryModel,appletModel,normalCell,appletModel_relativePos,pureBtn] mutableCopy];
     
     [self switchToTop];
     
@@ -190,7 +194,17 @@
     UITableViewBaseCell * cell = [tableView cellForRowAtIndexPath:indexPath];
     [cell doSelection];
 }
-
+//使用autolayout自适应之后，不能够进行再通过frame约束布局了~，frame自定义布局的宽高收到heightForRow的影响，如果重写AL就失效了~~
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UITableViewModelBaseCell * dataModal = _datas[indexPath.row];
+//    if([dataModal.cellClassName isEqualToString:@"PureButtonTableViewCell"])
+//    {
+//        PureButtonTableViewCell * cell = [tableView cellForRowAtIndexPath:indexPath];
+//        return cell.cellHeight;
+//    }
+//    return 100;
+//}
 
 /*
 // Override to support conditional editing of the table view.

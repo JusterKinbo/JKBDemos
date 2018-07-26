@@ -24,5 +24,8 @@
 @property (nonatomic,assign) CGFloat templateHeight;
 @property (nonatomic,copy) NSString * crc;//参考js公式
 
+//测试touches 时间
+@property (nonatomic,assign) CGFloat _pressTime;
+
 
 @end

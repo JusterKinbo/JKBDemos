@@ -26,6 +26,9 @@
  estimatedHeight 设置为最大才可以
  
  涉及到cell更新，里面需要使用mas_update
+ 
+ 重点重点重点~重要的事情说三遍
+ 使用autolayout自适应之后，不能够进行再通过frame约束布局了~，frame自定义布局的宽高收到heightForRow的影响，如果重写AL就失效了~~
  */
 
 @interface UITableViewCustomCellsController : UIViewController<UITableViewDelegate,UITableViewDataSource>

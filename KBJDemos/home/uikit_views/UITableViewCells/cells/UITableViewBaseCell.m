@@ -32,4 +32,9 @@
 {
     //子类实现
 }
+
+-(void)layoutSubviews
+{
+    [super layoutSubviews];
+}
 @end

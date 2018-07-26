@@ -14,7 +14,7 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesBegan:touches withEvent:event];
-    
+    _pressTime = [BBADirectBaseTableViewCell getCurrentTouchTime];
     NSLog(@"direct cell == > touchesBegan");
 }
 
@@ -28,6 +28,8 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesEnded:touches withEvent:event];
+    _pressTime = [BBADirectBaseTableViewCell getCurrentTouchTime]-_pressTime;
+    NSLog(@"touch time is %f",_pressTime);
     NSLog(@"direct cell == > touchesEnded");
 }
 
@@ -37,4 +39,9 @@
    NSLog(@"direct cell == > touchesMoved");
 }
 
++ (CGFloat)getCurrentTouchTime
+{
+    NSTimeInterval timeInterval = [NSDate date].timeIntervalSince1970;
+    return timeInterval*1000;
+}
 @end
