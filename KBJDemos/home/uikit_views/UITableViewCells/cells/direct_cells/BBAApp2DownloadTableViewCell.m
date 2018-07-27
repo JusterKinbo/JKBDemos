@@ -173,6 +173,12 @@
     _downLoad.layer.borderWidth = 1;
     _downLoad.layer.cornerRadius = 3;
     
+    _icon.clipsToBounds = YES;
+    _icon.layer.masksToBounds = YES;
+    _icon.layer.cornerRadius = 17.5;
+    _icon.layer.borderWidth=1;
+    _icon.layer.borderColor=[UIColor whiteColor].CGColor;
+    
 }
 
 - (CGSize)textSize:(NSString *)text fontSize:(int)fontSize
@@ -238,6 +244,9 @@
 //    [self generateCRCWith:@"?url=test." imTimeSign:20 pressTime:10 touchX:10];
     NSLog(@"%ld====",[self generateCRCWith:@"?url=test." imTimeSign:20 pressTime:10 touchX:10]);
     NSLog(@"%ld====",[self generateCRCWith:@"link?url=lala" imTimeSign:20 pressTime:10 touchX:10]);
+    
+    CGFloat timeInterval = [NSDate date].timeIntervalSince1970*1000;
+    NSLog(@"time*** time end %f",timeInterval);
 }
 
 - (BOOL)checkIfAppExistByPrivateMethod

@@ -284,7 +284,12 @@
     NSLog(@"scrollViewDidEndDragging");
 }
 
-
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    _cellPressTime = [NSDate date].timeIntervalSince1970 * 1000;
+    NSLog(@"time*** time start %f",_cellPressTime);
+    return indexPath;
+}
 
 
 

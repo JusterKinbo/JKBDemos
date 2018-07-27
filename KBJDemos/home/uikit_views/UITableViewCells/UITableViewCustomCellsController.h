@@ -29,6 +29,10 @@
  
  重点重点重点~重要的事情说三遍
  使用autolayout自适应之后，不能够进行再通过frame约束布局了~，frame自定义布局的宽高收到heightForRow的影响，如果重写AL就失效了~~
+ 
+ clipToBounds/maskToBounds区别
+ clipToBounds--uiviw 子view超出内容截断
+ maskToBounds--超出layer内容截断--比上面更猛（这个操作view内部，上面截断view外部）
  */
 
 @interface UITableViewCustomCellsController : UIViewController<UITableViewDelegate,UITableViewDataSource>
@@ -36,6 +40,8 @@
 //sug ad ck 针对vc的值
 @property (nonatomic,assign) NSInteger touchMoveNumber;
 @property (nonatomic,assign) CGFloat touchMoveTotalTime;
+
+@property (nonatomic,assign) CGFloat cellPressTime;
 
 @end
 

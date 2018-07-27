@@ -12,6 +12,8 @@
 
 /**
  app 直达下载 cell model
+ 
+
  */
 @interface BBAApp2DownlaodModel : BBADirectBaseTableViewModel
 
