@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GITHUB</key>
+	<string>github: https://github.com/JusterKinbo</string>
+	<key>FILEHEADER</key>
+	<string>// ___FILENAME___ 
+// ___PACKAGENAME___ 
+// 
+// Created by ___FULLUSERNAME___ on ___DATE___. 
+//  ___GITHUB___</string>
+</dict>
+</plist>

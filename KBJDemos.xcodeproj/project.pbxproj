@@ -45,6 +45,8 @@
 		2885EEBA211945330032426F /* FileAChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEB9211945330032426F /* FileAChildViewController.m */; };
 		2885EEBE211947160032426F /* FilaALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEBD211947160032426F /* FilaALabel.m */; };
 		2885EEC1211947260032426F /* FileAChildLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEC0211947260032426F /* FileAChildLabel.m */; };
+		2885EEC8211B091F0032426F /* XcodeTemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEC7211B091F0032426F /* XcodeTemplateViewController.m */; };
+		2885EECA211B126A0032426F /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2885EEC9211B126A0032426F /* IDETemplateMacros.plist */; };
 		28AD309B20E71A6800525254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309A20E71A6800525254 /* AppDelegate.m */; };
 		28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309D20E71A6800525254 /* TransitonAnimationViewController.m */; };
 		28AD30A420E71A6800525254 /* KBJDemos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28AD30A220E71A6800525254 /* KBJDemos.xcdatamodeld */; };
@@ -181,6 +183,9 @@
 		2885EEBD211947160032426F /* FilaALabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilaALabel.m; sourceTree = "<group>"; };
 		2885EEBF211947260032426F /* FileAChildLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileAChildLabel.h; sourceTree = "<group>"; };
 		2885EEC0211947260032426F /* FileAChildLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileAChildLabel.m; sourceTree = "<group>"; };
+		2885EEC6211B091F0032426F /* XcodeTemplateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeTemplateViewController.h; sourceTree = "<group>"; };
+		2885EEC7211B091F0032426F /* XcodeTemplateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeTemplateViewController.m; sourceTree = "<group>"; };
+		2885EEC9211B126A0032426F /* IDETemplateMacros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
 		28AD309620E71A6800525254 /* KBJDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBJDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AD309920E71A6800525254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28AD309A20E71A6800525254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -463,6 +468,16 @@
 			path = uikits;
 			sourceTree = "<group>";
 		};
+		2885EEC5211B08C50032426F /* xcode_template */ = {
+			isa = PBXGroup;
+			children = (
+				2885EEC9211B126A0032426F /* IDETemplateMacros.plist */,
+				2885EEC6211B091F0032426F /* XcodeTemplateViewController.h */,
+				2885EEC7211B091F0032426F /* XcodeTemplateViewController.m */,
+			);
+			path = xcode_template;
+			sourceTree = "<group>";
+		};
 		28AD308D20E71A6800525254 = {
 			isa = PBXGroup;
 			children = (
@@ -554,6 +569,7 @@
 		28AD30ED20E720CB00525254 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				2885EEC5211B08C50032426F /* xcode_template */,
 				2885EEAD2117E4D40032426F /* modules */,
 				28FDD8EC20FD9A1C00C7A5ED /* private_aips */,
 				28FDD8B620EF3BAC00C7A5ED /* uikit_views */,
@@ -827,6 +843,7 @@
 				2804717A20EA440800A5FF2E /* his_sug_pasteboard.png in Resources */,
 				28AD30A920E71A6800525254 /* LaunchScreen.storyboard in Resources */,
 				28AD30A620E71A6800525254 /* Assets.xcassets in Resources */,
+				2885EECA211B126A0032426F /* IDETemplateMacros.plist in Resources */,
 				28AD310820E7A67500525254 /* Home.xcassets in Resources */,
 				2804717B20EA440800A5FF2E /* his_sug_delete.png in Resources */,
 				2804717920EA440800A5FF2E /* his_sug_trash_unable.png in Resources */,
@@ -973,6 +990,7 @@
 				28FDD8EF20FD9A4F00C7A5ED /* PrivateAPIViewController.m in Sources */,
 				2804717320EA440800A5FF2E /* BBAHisSugPageView.m in Sources */,
 				28FDD8BE20EF3D4500C7A5ED /* BBAAppletTableViewCell.m in Sources */,
+				2885EEC8211B091F0032426F /* XcodeTemplateViewController.m in Sources */,
 				28AD30DA20E71F0E00525254 /* ContactNavVC.m in Sources */,
 				2885EEB62117E53B0032426F /* FileBViewController.m in Sources */,
 				28FDD8E520F8D4D800C7A5ED /* RichTextViewController.m in Sources */,

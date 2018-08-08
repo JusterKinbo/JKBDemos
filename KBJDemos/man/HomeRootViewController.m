@@ -47,6 +47,7 @@
         NSArray * marcos=@[@{@"title":@"Marcos",@"class":@"MarcosViewController"}];
         NSArray * privateApis=@[@{@"title":@"which app is installed",@"class":@"PrivateAPIViewController"}];
         NSArray * modules=@[@{@"title":@"module files",@"class":@"ModuleCompileViewController"}];
+        NSArray * xcode=@[@{@"title":@"xcode template",@"class":@"XcodeTemplateViewController"}];
         //vcs 分组容器
         NSArray * container=@[
                               @{@"sectionTitle":@"Animations",@"sectionData":animations},
@@ -54,7 +55,9 @@
                               @{@"sectionTitle":@"Tools",@"sectionData":marcos},
                               @{@"sectionTitle":@"private api",@"sectionData":privateApis},
                               @{@"sectionTitle":@"modules",@"sectionData":modules},
+                              @{@"sectionTitle":@"xcode",@"sectionData":xcode},
                               ];
+    
       
         return [container copy];
 }
