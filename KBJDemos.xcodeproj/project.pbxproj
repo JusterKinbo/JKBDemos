@@ -39,6 +39,12 @@
 		2885EEA2210040C50032426F /* UITableViewScrollEventDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEA1210040C50032426F /* UITableViewScrollEventDelegate.m */; };
 		2885EEA821097A520032426F /* BBADirectAppletTableViewCell_RelativePos.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEA721097A520032426F /* BBADirectAppletTableViewCell_RelativePos.m */; };
 		2885EEAC2109DF780032426F /* PureButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEAB2109DF780032426F /* PureButtonTableViewCell.m */; };
+		2885EEB02117E50A0032426F /* ModuleCompileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEAF2117E50A0032426F /* ModuleCompileViewController.m */; };
+		2885EEB32117E52F0032426F /* FileAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEB22117E52F0032426F /* FileAViewController.m */; };
+		2885EEB62117E53B0032426F /* FileBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEB52117E53B0032426F /* FileBViewController.m */; };
+		2885EEBA211945330032426F /* FileAChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEB9211945330032426F /* FileAChildViewController.m */; };
+		2885EEBE211947160032426F /* FilaALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEBD211947160032426F /* FilaALabel.m */; };
+		2885EEC1211947260032426F /* FileAChildLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEC0211947260032426F /* FileAChildLabel.m */; };
 		28AD309B20E71A6800525254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309A20E71A6800525254 /* AppDelegate.m */; };
 		28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309D20E71A6800525254 /* TransitonAnimationViewController.m */; };
 		28AD30A420E71A6800525254 /* KBJDemos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28AD30A220E71A6800525254 /* KBJDemos.xcdatamodeld */; };
@@ -162,6 +168,19 @@
 		2885EEA721097A520032426F /* BBADirectAppletTableViewCell_RelativePos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBADirectAppletTableViewCell_RelativePos.m; sourceTree = "<group>"; };
 		2885EEAA2109DF780032426F /* PureButtonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PureButtonTableViewCell.h; sourceTree = "<group>"; };
 		2885EEAB2109DF780032426F /* PureButtonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PureButtonTableViewCell.m; sourceTree = "<group>"; };
+		2885EEAE2117E50A0032426F /* ModuleCompileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleCompileViewController.h; sourceTree = "<group>"; };
+		2885EEAF2117E50A0032426F /* ModuleCompileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleCompileViewController.m; sourceTree = "<group>"; };
+		2885EEB12117E52F0032426F /* FileAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileAViewController.h; sourceTree = "<group>"; };
+		2885EEB22117E52F0032426F /* FileAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileAViewController.m; sourceTree = "<group>"; };
+		2885EEB42117E53B0032426F /* FileBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBViewController.h; sourceTree = "<group>"; };
+		2885EEB52117E53B0032426F /* FileBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBViewController.m; sourceTree = "<group>"; };
+		2885EEB7211849ED0032426F /* MouduleCompile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouduleCompile.h; sourceTree = "<group>"; };
+		2885EEB8211945330032426F /* FileAChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileAChildViewController.h; sourceTree = "<group>"; };
+		2885EEB9211945330032426F /* FileAChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileAChildViewController.m; sourceTree = "<group>"; };
+		2885EEBC211947160032426F /* FilaALabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilaALabel.h; sourceTree = "<group>"; };
+		2885EEBD211947160032426F /* FilaALabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilaALabel.m; sourceTree = "<group>"; };
+		2885EEBF211947260032426F /* FileAChildLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileAChildLabel.h; sourceTree = "<group>"; };
+		2885EEC0211947260032426F /* FileAChildLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileAChildLabel.m; sourceTree = "<group>"; };
 		28AD309620E71A6800525254 /* KBJDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBJDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AD309920E71A6800525254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28AD309A20E71A6800525254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -416,6 +435,34 @@
 			path = cus_cells;
 			sourceTree = "<group>";
 		};
+		2885EEAD2117E4D40032426F /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				2885EEBB211946FB0032426F /* uikits */,
+				2885EEAE2117E50A0032426F /* ModuleCompileViewController.h */,
+				2885EEAF2117E50A0032426F /* ModuleCompileViewController.m */,
+				2885EEB12117E52F0032426F /* FileAViewController.h */,
+				2885EEB22117E52F0032426F /* FileAViewController.m */,
+				2885EEB42117E53B0032426F /* FileBViewController.h */,
+				2885EEB52117E53B0032426F /* FileBViewController.m */,
+				2885EEB7211849ED0032426F /* MouduleCompile.h */,
+				2885EEB8211945330032426F /* FileAChildViewController.h */,
+				2885EEB9211945330032426F /* FileAChildViewController.m */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		2885EEBB211946FB0032426F /* uikits */ = {
+			isa = PBXGroup;
+			children = (
+				2885EEBC211947160032426F /* FilaALabel.h */,
+				2885EEBD211947160032426F /* FilaALabel.m */,
+				2885EEBF211947260032426F /* FileAChildLabel.h */,
+				2885EEC0211947260032426F /* FileAChildLabel.m */,
+			);
+			path = uikits;
+			sourceTree = "<group>";
+		};
 		28AD308D20E71A6800525254 = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +554,7 @@
 		28AD30ED20E720CB00525254 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				2885EEAD2117E4D40032426F /* modules */,
 				28FDD8EC20FD9A1C00C7A5ED /* private_aips */,
 				28FDD8B620EF3BAC00C7A5ED /* uikit_views */,
 				2846CA5C20EB5764003D8943 /* marcos */,
@@ -891,6 +939,7 @@
 				28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */,
 				28FDD8D420EF84C200C7A5ED /* UIImage+UIColor.m in Sources */,
 				28AD30E620E71FB000525254 /* DiscoverRootViewController.m in Sources */,
+				2885EEBA211945330032426F /* FileAChildViewController.m in Sources */,
 				2804717020EA440800A5FF2E /* BBAHisSugTagViewContainer.m in Sources */,
 				28AD310320E79BD000525254 /* CustomPopAnimation.m in Sources */,
 				2885EEAC2109DF780032426F /* PureButtonTableViewCell.m in Sources */,
@@ -910,6 +959,7 @@
 				2885EE95210031E60032426F /* BBADirectBaseTableViewCell.m in Sources */,
 				28AD30FD20E7992300525254 /* TrasitionedToViewController.m in Sources */,
 				2804716F20EA440800A5FF2E /* BBAPrivateHissugTagViewContainer.m in Sources */,
+				2885EEBE211947160032426F /* FilaALabel.m in Sources */,
 				28AD30E920E71FBD00525254 /* MineRootViewController.m in Sources */,
 				28FDD8BA20EF3C3B00C7A5ED /* UITableViewCustomCellsController.m in Sources */,
 				28AD30F720E72A4B00525254 /* HisSugViewController.m in Sources */,
@@ -918,15 +968,18 @@
 				2885EE9F21003C1E0032426F /* UITableViewWithTouchesEvent.m in Sources */,
 				28FDD8CA20EF3FC500C7A5ED /* BBAApp2DownlaodModel.m in Sources */,
 				2885EEA2210040C50032426F /* UITableViewScrollEventDelegate.m in Sources */,
+				2885EEB32117E52F0032426F /* FileAViewController.m in Sources */,
 				2846CA6820ECE534003D8943 /* TransitionContainerViewController.m in Sources */,
 				28FDD8EF20FD9A4F00C7A5ED /* PrivateAPIViewController.m in Sources */,
 				2804717320EA440800A5FF2E /* BBAHisSugPageView.m in Sources */,
 				28FDD8BE20EF3D4500C7A5ED /* BBAAppletTableViewCell.m in Sources */,
 				28AD30DA20E71F0E00525254 /* ContactNavVC.m in Sources */,
+				2885EEB62117E53B0032426F /* FileBViewController.m in Sources */,
 				28FDD8E520F8D4D800C7A5ED /* RichTextViewController.m in Sources */,
 				2804716C20EA440800A5FF2E /* BBAHisSugEventsHandler.m in Sources */,
 				28FDD8C120EF3D5900C7A5ED /* BBAApp2DownloadTableViewCell.m in Sources */,
 				28AD310620E79D1C00525254 /* CustomPresentAnimation.m in Sources */,
+				2885EEB02117E50A0032426F /* ModuleCompileViewController.m in Sources */,
 				28AD30EC20E7209200525254 /* MainTabVC.m in Sources */,
 				28FDD8DA20EF89E200C7A5ED /* UITableViewBaseCell.m in Sources */,
 				2804717420EA440800A5FF2E /* BBASuggestionTagView.m in Sources */,
@@ -939,6 +992,7 @@
 				2804717F20EA446100A5FF2E /* BBASuggestDataItem.m in Sources */,
 				2885EE9B2100386B0032426F /* UITableViewCustomeCellTouchTableViewDelegate.m in Sources */,
 				28FDD8C720EF3FA600C7A5ED /* BBAAppletCellModel.m in Sources */,
+				2885EEC1211947260032426F /* FileAChildLabel.m in Sources */,
 				2885EE98210032CC0032426F /* BBADirectBaseTableViewModel.m in Sources */,
 				2804717120EA440800A5FF2E /* BBAHistoryTagViewContainer.m in Sources */,
 				2804716A20EA440800A5FF2E /* BBAAppCommonInfo.m in Sources */,

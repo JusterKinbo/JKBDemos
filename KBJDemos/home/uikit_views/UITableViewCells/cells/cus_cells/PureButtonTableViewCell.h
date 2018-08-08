@@ -11,6 +11,9 @@
 
 /**
  单纯的放入一个大button，覆盖整个cell，目的是测试touchup事件与scroll滚动是否冲突
+ 
+ 结果表明，确实会冲突~
+ 
  */
 @interface PureButtonTableViewCell : UITableViewBaseCell
 

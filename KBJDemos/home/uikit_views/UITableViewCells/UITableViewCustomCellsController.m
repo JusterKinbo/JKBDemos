@@ -191,6 +191,8 @@
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+     _cellPressTime = [NSDate date].timeIntervalSince1970 * 1000 - _cellPressTime;
+    NSLog(@"time*** time end %f",_cellPressTime);
     UITableViewBaseCell * cell = [tableView cellForRowAtIndexPath:indexPath];
     [cell doSelection];
 }

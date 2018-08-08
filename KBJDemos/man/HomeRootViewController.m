@@ -13,6 +13,7 @@
 #import "UITableViewCustomCellsController.h"
 #import "RichTextViewController.h"
 #import "PrivateAPIViewController.h"
+#import "ModuleCompileViewController.h"
 
 
 @interface HomeRootViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -44,14 +45,15 @@
                           @{@"title":@"custom cells",@"class":@"UITableViewCustomCellsController"},
                           @{@"title":@"rich text",@"class":@"RichTextViewController"},];
         NSArray * marcos=@[@{@"title":@"Marcos",@"class":@"MarcosViewController"}];
-    NSArray * privateApis=@[@{@"title":@"which app is installed",@"class":@"PrivateAPIViewController"}];
-
+        NSArray * privateApis=@[@{@"title":@"which app is installed",@"class":@"PrivateAPIViewController"}];
+        NSArray * modules=@[@{@"title":@"module files",@"class":@"ModuleCompileViewController"}];
         //vcs 分组容器
         NSArray * container=@[
                               @{@"sectionTitle":@"Animations",@"sectionData":animations},
                               @{@"sectionTitle":@"UIKit--Views",@"sectionData":views},
                               @{@"sectionTitle":@"Tools",@"sectionData":marcos},
                               @{@"sectionTitle":@"private api",@"sectionData":privateApis},
+                              @{@"sectionTitle":@"modules",@"sectionData":modules},
                               ];
       
         return [container copy];

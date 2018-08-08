@@ -245,8 +245,8 @@
     NSLog(@"%ld====",[self generateCRCWith:@"?url=test." imTimeSign:20 pressTime:10 touchX:10]);
     NSLog(@"%ld====",[self generateCRCWith:@"link?url=lala" imTimeSign:20 pressTime:10 touchX:10]);
     
-    CGFloat timeInterval = [NSDate date].timeIntervalSince1970*1000;
-    NSLog(@"time*** time end %f",timeInterval);
+//    CGFloat timeInterval = [NSDate date].timeIntervalSince1970*1000;
+//    NSLog(@"time*** time end %f",timeInterval);
 }
 
 - (BOOL)checkIfAppExistByPrivateMethod
