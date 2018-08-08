@@ -48,6 +48,7 @@
         NSArray * privateApis=@[@{@"title":@"which app is installed",@"class":@"PrivateAPIViewController"}];
         NSArray * modules=@[@{@"title":@"module files",@"class":@"ModuleCompileViewController"}];
         NSArray * xcode=@[@{@"title":@"xcode template",@"class":@"XcodeTemplateViewController"}];
+        NSArray * runtime=@[@{@"title":@"runtime",@"class":@"RuntimeViewController"}];
         //vcs 分组容器
         NSArray * container=@[
                               @{@"sectionTitle":@"Animations",@"sectionData":animations},
@@ -56,6 +57,7 @@
                               @{@"sectionTitle":@"private api",@"sectionData":privateApis},
                               @{@"sectionTitle":@"modules",@"sectionData":modules},
                               @{@"sectionTitle":@"xcode",@"sectionData":xcode},
+                              @{@"sectionTitle":@"runtime",@"sectionData":runtime},
                               ];
     
       
