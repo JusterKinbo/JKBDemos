@@ -48,6 +48,7 @@
 		2885EEC8211B091F0032426F /* XcodeTemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EEC7211B091F0032426F /* XcodeTemplateViewController.m */; };
 		2885EECA211B126A0032426F /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2885EEC9211B126A0032426F /* IDETemplateMacros.plist */; };
 		2885EECE211B17880032426F /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EECD211B17880032426F /* RuntimeViewController.m */; };
+		2885EED1211BDE890032426F /* CodeSnippetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EED0211BDE890032426F /* CodeSnippetViewController.m */; };
 		28AD309B20E71A6800525254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309A20E71A6800525254 /* AppDelegate.m */; };
 		28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309D20E71A6800525254 /* TransitonAnimationViewController.m */; };
 		28AD30A420E71A6800525254 /* KBJDemos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28AD30A220E71A6800525254 /* KBJDemos.xcdatamodeld */; };
@@ -189,6 +190,8 @@
 		2885EEC9211B126A0032426F /* IDETemplateMacros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
 		2885EECC211B17880032426F /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
 		2885EECD211B17880032426F /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
+		2885EECF211BDE880032426F /* CodeSnippetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeSnippetViewController.h; sourceTree = "<group>"; };
+		2885EED0211BDE890032426F /* CodeSnippetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeSnippetViewController.m; sourceTree = "<group>"; };
 		28AD309620E71A6800525254 /* KBJDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBJDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AD309920E71A6800525254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28AD309A20E71A6800525254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -477,6 +480,8 @@
 				2885EEC9211B126A0032426F /* IDETemplateMacros.plist */,
 				2885EEC6211B091F0032426F /* XcodeTemplateViewController.h */,
 				2885EEC7211B091F0032426F /* XcodeTemplateViewController.m */,
+				2885EECF211BDE880032426F /* CodeSnippetViewController.h */,
+				2885EED0211BDE890032426F /* CodeSnippetViewController.m */,
 			);
 			path = xcode;
 			sourceTree = "<group>";
@@ -970,6 +975,7 @@
 				28FDD8D420EF84C200C7A5ED /* UIImage+UIColor.m in Sources */,
 				28AD30E620E71FB000525254 /* DiscoverRootViewController.m in Sources */,
 				2885EEBA211945330032426F /* FileAChildViewController.m in Sources */,
+				2885EED1211BDE890032426F /* CodeSnippetViewController.m in Sources */,
 				2804717020EA440800A5FF2E /* BBAHisSugTagViewContainer.m in Sources */,
 				28AD310320E79BD000525254 /* CustomPopAnimation.m in Sources */,
 				2885EECE211B17880032426F /* RuntimeViewController.m in Sources */,

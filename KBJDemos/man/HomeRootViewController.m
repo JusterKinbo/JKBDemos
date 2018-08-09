@@ -47,7 +47,8 @@
         NSArray * marcos=@[@{@"title":@"Marcos",@"class":@"MarcosViewController"}];
         NSArray * privateApis=@[@{@"title":@"which app is installed",@"class":@"PrivateAPIViewController"}];
         NSArray * modules=@[@{@"title":@"module files",@"class":@"ModuleCompileViewController"}];
-        NSArray * xcode=@[@{@"title":@"xcode template",@"class":@"XcodeTemplateViewController"}];
+        NSArray * xcode=@[@{@"title":@"xcode template",@"class":@"XcodeTemplateViewController"},
+                          @{@"title":@"code snippet",@"class":@"CodeSnippetViewController"}];
         NSArray * runtime=@[@{@"title":@"runtime",@"class":@"RuntimeViewController"}];
         //vcs 分组容器
         NSArray * container=@[
