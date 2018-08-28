@@ -39,7 +39,7 @@
     _tableView.touchDelegate = [[UITableViewCustomeCellTouchTableViewDelegate alloc]init];
 //    _tableView.dragDelegate = [[UITableViewScrollEventDelegate alloc]init];
     _tableView.tableFooterView = [[UIView alloc]init];//去掉底部多余空白行
-    _tableView.estimatedRowHeight = 200;
+    _tableView.estimatedRowHeight = 200;//这个值过高导致删除动画问题
     _tableView.rowHeight = UITableViewAutomaticDimension;
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -216,17 +216,19 @@
 }
 */
 
-/*
-// Override to support editing the table view.
+
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [_datas removeObjectAtIndex:indexPath.row];
+        [tableView beginUpdates];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+        [tableView endUpdates];
+        [tableView reloadData];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
@@ -251,7 +253,7 @@
     wxModel.name = @"微信";
     wxModel.app = @"应用";
     wxModel.volume = @"90.4M";
-    wxModel.version = @"最新V.11";
+    wxModel.version = [NSString stringWithFormat:@"%ld",_datas.count];//@"最新V.11";
     wxModel.download = @"下载";
     wxModel.cellClassName = @"BBAApp2DownloadTableViewCell";
     wxModel.appScheme = @"weixin";
@@ -260,7 +262,8 @@
         NSIndexPath *scrollIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 //        [_tableView scrollToRowAtIndexPath:scrollIndexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
         [_switchLabel setText:@"开"];
-        [_datas addObject:wxModel];
+//        [_datas addObject:wxModel];
+        [_datas insertObject:wxModel atIndex:0];
         [_tableView insertRowsAtIndexPaths:@[scrollIndexPath] withRowAnimation:UITableViewRowAnimationTop];
     }else {
         [_switchLabel setText:@"关"];

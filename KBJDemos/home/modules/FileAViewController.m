@@ -7,6 +7,7 @@
 //
 
 #import "FileAViewController.h"
+#import "MouduleProtocolIMP.h"
 
 @interface FileAViewController ()
 
@@ -14,9 +15,22 @@
 
 @implementation FileAViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if(self)
+    {
+        NSLog(@"A init");
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    MouduleProtocolIMP * imp = [[MouduleProtocolIMP alloc]init];
+    [imp getNumber];
+    [MouduleProtocolIMP getNumber];
 }
 
 - (void)didReceiveMemoryWarning {

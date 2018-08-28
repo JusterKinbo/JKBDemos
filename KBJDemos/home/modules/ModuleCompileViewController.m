@@ -23,7 +23,6 @@
     AChildVC.view.backgroundColor = [UIColor greenColor];
     [self addChildViewController:AChildVC];
     [self.view addSubview: AChildVC.view];
-    
 }
 
 - (void)didReceiveMemoryWarning {

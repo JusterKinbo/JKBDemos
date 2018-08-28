@@ -30,6 +30,10 @@
 }
 
 - (void)dismiss{
+    //这两个等效，放多少个pop都无所谓，因为selfpop之后不在导航栈了(就没有nav属性了)，他就没法pop其他vc了
+//    [self.navigationController popViewControllerAnimated:NO];
+//    [self.navigationController popViewControllerAnimated:NO];
+//    [self.navigationController popViewControllerAnimated:NO];
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
@@ -44,7 +48,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     UIButton * dismiss = [UIButton buttonWithType:UIButtonTypeSystem];
-    [dismiss setTitle:@"dismiss back" forState:UIControlStateNormal];
+    [dismiss setTitle:@"pop back" forState:UIControlStateNormal];
     [dismiss addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:dismiss];

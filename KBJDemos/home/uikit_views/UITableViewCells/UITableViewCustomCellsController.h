@@ -33,6 +33,12 @@
  clipToBounds/maskToBounds区别
  clipToBounds--uiviw 子view超出内容截断
  maskToBounds--超出layer内容截断--比上面更猛（这个操作view内部，上面截断view外部）
+ 
+ **********************************
+ estimate 导致删除动画效果非常不理想问题
+ 原因是estimate是一个预估值，这个值越接近平均值效果越理想
+ 所以针对普通cell和直达cell，当这个值不匹配时会导致删除效果问题很大
+ 解决方案：heightForRow 针对不同类型cell返回固定高度
  */
 
 @interface UITableViewCustomCellsController : UIViewController<UITableViewDelegate,UITableViewDataSource>

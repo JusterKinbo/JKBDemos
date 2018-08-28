@@ -9,6 +9,7 @@
 #import "RichTextViewController.h"
 #import "HighLinkRichText.h"
 
+
 @interface RichTextViewController ()<HighLinkRichTextDelegate>
 
 @end
@@ -21,7 +22,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     HighLinkRichText * highLinkRichText = [[HighLinkRichText alloc]initWithFrame:CGRectMake(10, 100, 200, 200) text:@"欢迎使用XX产品, 在使用过程中有疑问请< a href=\"xxapp://feedback\">反馈</ a>"];
-    highLinkRichText.delegate = self;
+    highLinkRichText.highLinkdelegate = self;
     [self.view addSubview:highLinkRichText];
 }
 
@@ -44,7 +45,8 @@
     if([text isEqualToString:@"反馈"])
     {
         NSLog(@"%@",cls);
-    }
+    };
+    
 }
 
 @end

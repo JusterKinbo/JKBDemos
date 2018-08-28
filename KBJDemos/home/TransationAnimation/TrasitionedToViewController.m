@@ -7,6 +7,7 @@
 //
 
 #import "TrasitionedToViewController.h"
+#import "ModuleCompileViewController.h"
 
 @interface TrasitionedToViewController ()
 
@@ -50,8 +51,10 @@
 
 - (void)dismiss{
     [self dismissViewControllerAnimated:YES completion:^{
-        
+
     }];
+//    ModuleCompileViewController* vc = [[ModuleCompileViewController alloc]init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

@@ -30,7 +30,7 @@ static BBAHisTagViewFactory * _instance = nil;
             _instance = [super allocWithZone:zone];
         }
     });
-    return _instance;
+    return _instance;//触发在init前，所以会保证只有一个对象，后面使用self就是_instance（因为内存区域在这里）
 }
 
 - (instancetype)init

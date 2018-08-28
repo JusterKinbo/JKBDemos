@@ -27,6 +27,7 @@
 		2804717B20EA440800A5FF2E /* his_sug_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 2804716820EA440800A5FF2E /* his_sug_delete.png */; };
 		2804717C20EA440800A5FF2E /* his_sug_show.png in Resources */ = {isa = PBXBuildFile; fileRef = 2804716920EA440800A5FF2E /* his_sug_show.png */; };
 		2804717F20EA446100A5FF2E /* BBASuggestDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804717E20EA446100A5FF2E /* BBASuggestDataItem.m */; };
+		283E59C12126C4BD001BD561 /* MouduleProtocolIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 283E59C02126C4BD001BD561 /* MouduleProtocolIMP.m */; };
 		2846CA5F20EB578F003D8943 /* MarcosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2846CA5E20EB578F003D8943 /* MarcosViewController.m */; };
 		2846CA6220ECE508003D8943 /* TransitionHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2846CA6120ECE508003D8943 /* TransitionHeadViewController.m */; };
 		2846CA6520ECE520003D8943 /* TransitionBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2846CA6420ECE520003D8943 /* TransitionBottomViewController.m */; };
@@ -147,6 +148,9 @@
 		2804716920EA440800A5FF2E /* his_sug_show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = his_sug_show.png; sourceTree = "<group>"; };
 		2804717D20EA446100A5FF2E /* BBASuggestDataItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBASuggestDataItem.h; sourceTree = "<group>"; };
 		2804717E20EA446100A5FF2E /* BBASuggestDataItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBASuggestDataItem.m; sourceTree = "<group>"; };
+		283E59BD2126C46A001BD561 /* MoudleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoudleProtocol.h; sourceTree = "<group>"; };
+		283E59BF2126C4BD001BD561 /* MouduleProtocolIMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouduleProtocolIMP.h; sourceTree = "<group>"; };
+		283E59C02126C4BD001BD561 /* MouduleProtocolIMP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouduleProtocolIMP.m; sourceTree = "<group>"; };
 		2846CA5D20EB578F003D8943 /* MarcosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarcosViewController.h; sourceTree = "<group>"; };
 		2846CA5E20EB578F003D8943 /* MarcosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarcosViewController.m; sourceTree = "<group>"; };
 		2846CA6020ECE508003D8943 /* TransitionHeadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionHeadViewController.h; sourceTree = "<group>"; };
@@ -392,6 +396,25 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		283E59BE2126C497001BD561 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				283E59BD2126C46A001BD561 /* MoudleProtocol.h */,
+				283E59BF2126C4BD001BD561 /* MouduleProtocolIMP.h */,
+				283E59C02126C4BD001BD561 /* MouduleProtocolIMP.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		283E59C22126C546001BD561 /* derevied */ = {
+			isa = PBXGroup;
+			children = (
+				2885EEB8211945330032426F /* FileAChildViewController.h */,
+				2885EEB9211945330032426F /* FileAChildViewController.m */,
+			);
+			path = derevied;
+			sourceTree = "<group>";
+		};
 		2846CA5C20EB5764003D8943 /* marcos */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +472,8 @@
 		2885EEAD2117E4D40032426F /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				283E59C22126C546001BD561 /* derevied */,
+				283E59BE2126C497001BD561 /* protocol */,
 				2885EEBB211946FB0032426F /* uikits */,
 				2885EEAE2117E50A0032426F /* ModuleCompileViewController.h */,
 				2885EEAF2117E50A0032426F /* ModuleCompileViewController.m */,
@@ -457,8 +482,6 @@
 				2885EEB42117E53B0032426F /* FileBViewController.h */,
 				2885EEB52117E53B0032426F /* FileBViewController.m */,
 				2885EEB7211849ED0032426F /* MouduleCompile.h */,
-				2885EEB8211945330032426F /* FileAChildViewController.h */,
-				2885EEB9211945330032426F /* FileAChildViewController.m */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -978,6 +1001,7 @@
 				2885EED1211BDE890032426F /* CodeSnippetViewController.m in Sources */,
 				2804717020EA440800A5FF2E /* BBAHisSugTagViewContainer.m in Sources */,
 				28AD310320E79BD000525254 /* CustomPopAnimation.m in Sources */,
+				283E59C12126C4BD001BD561 /* MouduleProtocolIMP.m in Sources */,
 				2885EECE211B17880032426F /* RuntimeViewController.m in Sources */,
 				2885EEAC2109DF780032426F /* PureButtonTableViewCell.m in Sources */,
 				2804716E20EA440800A5FF2E /* UIColor+BBAHexColor.m in Sources */,
