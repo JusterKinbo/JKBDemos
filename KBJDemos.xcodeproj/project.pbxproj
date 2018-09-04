@@ -50,6 +50,9 @@
 		2885EECA211B126A0032426F /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2885EEC9211B126A0032426F /* IDETemplateMacros.plist */; };
 		2885EECE211B17880032426F /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EECD211B17880032426F /* RuntimeViewController.m */; };
 		2885EED1211BDE890032426F /* CodeSnippetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EED0211BDE890032426F /* CodeSnippetViewController.m */; };
+		28A28432213E716400ED2473 /* Present2HalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28431213E716400ED2473 /* Present2HalfTransientViewController.m */; };
+		28A28435213E718000ED2473 /* PresentedHalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28434213E718000ED2473 /* PresentedHalfTransientViewController.m */; };
+		28A28438213E77B500ED2473 /* Presented2HalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28437213E77B500ED2473 /* Presented2HalfTransientViewController.m */; };
 		28AD309B20E71A6800525254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309A20E71A6800525254 /* AppDelegate.m */; };
 		28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309D20E71A6800525254 /* TransitonAnimationViewController.m */; };
 		28AD30A420E71A6800525254 /* KBJDemos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28AD30A220E71A6800525254 /* KBJDemos.xcdatamodeld */; };
@@ -196,6 +199,12 @@
 		2885EECD211B17880032426F /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
 		2885EECF211BDE880032426F /* CodeSnippetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeSnippetViewController.h; sourceTree = "<group>"; };
 		2885EED0211BDE890032426F /* CodeSnippetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeSnippetViewController.m; sourceTree = "<group>"; };
+		28A28430213E716400ED2473 /* Present2HalfTransientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Present2HalfTransientViewController.h; sourceTree = "<group>"; };
+		28A28431213E716400ED2473 /* Present2HalfTransientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Present2HalfTransientViewController.m; sourceTree = "<group>"; };
+		28A28433213E718000ED2473 /* PresentedHalfTransientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentedHalfTransientViewController.h; sourceTree = "<group>"; };
+		28A28434213E718000ED2473 /* PresentedHalfTransientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentedHalfTransientViewController.m; sourceTree = "<group>"; };
+		28A28436213E77B500ED2473 /* Presented2HalfTransientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presented2HalfTransientViewController.h; sourceTree = "<group>"; };
+		28A28437213E77B500ED2473 /* Presented2HalfTransientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Presented2HalfTransientViewController.m; sourceTree = "<group>"; };
 		28AD309620E71A6800525254 /* KBJDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBJDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AD309920E71A6800525254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28AD309A20E71A6800525254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -518,6 +527,19 @@
 			path = runtime;
 			sourceTree = "<group>";
 		};
+		28A2842F213E70E000ED2473 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				28A28430213E716400ED2473 /* Present2HalfTransientViewController.h */,
+				28A28431213E716400ED2473 /* Present2HalfTransientViewController.m */,
+				28A28433213E718000ED2473 /* PresentedHalfTransientViewController.h */,
+				28A28434213E718000ED2473 /* PresentedHalfTransientViewController.m */,
+				28A28436213E77B500ED2473 /* Presented2HalfTransientViewController.h */,
+				28A28437213E77B500ED2473 /* Presented2HalfTransientViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		28AD308D20E71A6800525254 = {
 			isa = PBXGroup;
 			children = (
@@ -673,6 +695,7 @@
 		28FDD8B620EF3BAC00C7A5ED /* uikit_views */ = {
 			isa = PBXGroup;
 			children = (
+				28A2842F213E70E000ED2473 /* VC */,
 				28FDD8E220F8D4AF00C7A5ED /* RichText */,
 				28FDD8B720EF3BE900C7A5ED /* UITableViewCells */,
 				28AD30F320E7296000525254 /* HisSug */,
@@ -1002,6 +1025,7 @@
 				2804717020EA440800A5FF2E /* BBAHisSugTagViewContainer.m in Sources */,
 				28AD310320E79BD000525254 /* CustomPopAnimation.m in Sources */,
 				283E59C12126C4BD001BD561 /* MouduleProtocolIMP.m in Sources */,
+				28A28435213E718000ED2473 /* PresentedHalfTransientViewController.m in Sources */,
 				2885EECE211B17880032426F /* RuntimeViewController.m in Sources */,
 				2885EEAC2109DF780032426F /* PureButtonTableViewCell.m in Sources */,
 				2804716E20EA440800A5FF2E /* UIColor+BBAHexColor.m in Sources */,
@@ -1038,6 +1062,7 @@
 				28AD30DA20E71F0E00525254 /* ContactNavVC.m in Sources */,
 				2885EEB62117E53B0032426F /* FileBViewController.m in Sources */,
 				28FDD8E520F8D4D800C7A5ED /* RichTextViewController.m in Sources */,
+				28A28438213E77B500ED2473 /* Presented2HalfTransientViewController.m in Sources */,
 				2804716C20EA440800A5FF2E /* BBAHisSugEventsHandler.m in Sources */,
 				28FDD8C120EF3D5900C7A5ED /* BBAApp2DownloadTableViewCell.m in Sources */,
 				28AD310620E79D1C00525254 /* CustomPresentAnimation.m in Sources */,
@@ -1058,6 +1083,7 @@
 				2885EE98210032CC0032426F /* BBADirectBaseTableViewModel.m in Sources */,
 				2804717120EA440800A5FF2E /* BBAHistoryTagViewContainer.m in Sources */,
 				2804716A20EA440800A5FF2E /* BBAAppCommonInfo.m in Sources */,
+				28A28432213E716400ED2473 /* Present2HalfTransientViewController.m in Sources */,
 				28AD30D720E71E8700525254 /* HomeNavVC.m in Sources */,
 				28AD309B20E71A6800525254 /* AppDelegate.m in Sources */,
 			);

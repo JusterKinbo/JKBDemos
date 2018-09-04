@@ -41,7 +41,8 @@
 - (NSArray *)getSectionAndRows
 {
         NSArray * animations=@[@{@"title":@"Transition animation",@"class":@"TransitonAnimationViewController"}];
-        NSArray * views=@[@{@"title":@"Hissug",@"class":@"HisSugViewController"},
+        NSArray * views=@[@{@"title":@"half presented vc",@"class":@"Present2HalfTransientViewController"},
+                          @{@"title":@"Hissug",@"class":@"HisSugViewController"},
                           @{@"title":@"custom cells",@"class":@"UITableViewCustomCellsController"},
                           @{@"title":@"rich text",@"class":@"RichTextViewController"},];
         NSArray * marcos=@[@{@"title":@"Marcos",@"class":@"MarcosViewController"}];
