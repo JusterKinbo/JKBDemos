@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2802311F213EA33000B3E4BC /* RuntimeCongfiguView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802311E213EA33000B3E4BC /* RuntimeCongfiguView.m */; };
+		28023122213EA6DE00B3E4BC /* RuntimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28023121213EA6DE00B3E4BC /* RuntimeButton.m */; };
+		28023125213EB21500B3E4BC /* RuntimeUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28023124213EB21500B3E4BC /* RuntimeUIImageView.m */; };
 		2804716A20EA440800A5FF2E /* BBAAppCommonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714820EA440800A5FF2E /* BBAAppCommonInfo.m */; };
 		2804716B20EA440800A5FF2E /* BBAHisTagViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714920EA440800A5FF2E /* BBAHisTagViewFactory.m */; };
 		2804716C20EA440800A5FF2E /* BBAHisSugEventsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714A20EA440800A5FF2E /* BBAHisSugEventsHandler.m */; };
@@ -53,6 +56,8 @@
 		28A28432213E716400ED2473 /* Present2HalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28431213E716400ED2473 /* Present2HalfTransientViewController.m */; };
 		28A28435213E718000ED2473 /* PresentedHalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28434213E718000ED2473 /* PresentedHalfTransientViewController.m */; };
 		28A28438213E77B500ED2473 /* Presented2HalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28437213E77B500ED2473 /* Presented2HalfTransientViewController.m */; };
+		28A2843C213E88DF00ED2473 /* ConfiguredViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A2843B213E88DF00ED2473 /* ConfiguredViewViewController.m */; };
+		28A2843F213E890700ED2473 /* ConfiguredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A2843E213E890700ED2473 /* ConfiguredView.m */; };
 		28AD309B20E71A6800525254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309A20E71A6800525254 /* AppDelegate.m */; };
 		28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD309D20E71A6800525254 /* TransitonAnimationViewController.m */; };
 		28AD30A420E71A6800525254 /* KBJDemos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28AD30A220E71A6800525254 /* KBJDemos.xcdatamodeld */; };
@@ -115,6 +120,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2802311C213EA31B00B3E4BC /* RuntimeCongfigureViewMarcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeCongfigureViewMarcos.h; sourceTree = "<group>"; };
+		2802311D213EA33000B3E4BC /* RuntimeCongfiguView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeCongfiguView.h; sourceTree = "<group>"; };
+		2802311E213EA33000B3E4BC /* RuntimeCongfiguView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeCongfiguView.m; sourceTree = "<group>"; };
+		28023120213EA6DE00B3E4BC /* RuntimeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeButton.h; sourceTree = "<group>"; };
+		28023121213EA6DE00B3E4BC /* RuntimeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeButton.m; sourceTree = "<group>"; };
+		28023123213EB21500B3E4BC /* RuntimeUIImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeUIImageView.h; sourceTree = "<group>"; };
+		28023124213EB21500B3E4BC /* RuntimeUIImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeUIImageView.m; sourceTree = "<group>"; };
 		2804714320EA440800A5FF2E /* BBAHisSugPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisSugPageView.h; sourceTree = "<group>"; };
 		2804714520EA440800A5FF2E /* BBAHisTagViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisTagViewFactory.h; sourceTree = "<group>"; };
 		2804714620EA440800A5FF2E /* BBAHisSugEventHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisSugEventHandlerProtocol.h; sourceTree = "<group>"; };
@@ -205,6 +217,11 @@
 		28A28434213E718000ED2473 /* PresentedHalfTransientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentedHalfTransientViewController.m; sourceTree = "<group>"; };
 		28A28436213E77B500ED2473 /* Presented2HalfTransientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presented2HalfTransientViewController.h; sourceTree = "<group>"; };
 		28A28437213E77B500ED2473 /* Presented2HalfTransientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Presented2HalfTransientViewController.m; sourceTree = "<group>"; };
+		28A2843A213E88DF00ED2473 /* ConfiguredViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfiguredViewViewController.h; sourceTree = "<group>"; };
+		28A2843B213E88DF00ED2473 /* ConfiguredViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfiguredViewViewController.m; sourceTree = "<group>"; };
+		28A2843D213E890700ED2473 /* ConfiguredView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfiguredView.h; sourceTree = "<group>"; };
+		28A2843E213E890700ED2473 /* ConfiguredView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfiguredView.m; sourceTree = "<group>"; };
+		28A28440213E8E7000ED2473 /* ConfigredViewMarcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigredViewMarcos.h; sourceTree = "<group>"; };
 		28AD309620E71A6800525254 /* KBJDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBJDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AD309920E71A6800525254 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28AD309A20E71A6800525254 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -523,6 +540,13 @@
 			children = (
 				2885EECC211B17880032426F /* RuntimeViewController.h */,
 				2885EECD211B17880032426F /* RuntimeViewController.m */,
+				2802311C213EA31B00B3E4BC /* RuntimeCongfigureViewMarcos.h */,
+				2802311D213EA33000B3E4BC /* RuntimeCongfiguView.h */,
+				2802311E213EA33000B3E4BC /* RuntimeCongfiguView.m */,
+				28023120213EA6DE00B3E4BC /* RuntimeButton.h */,
+				28023121213EA6DE00B3E4BC /* RuntimeButton.m */,
+				28023123213EB21500B3E4BC /* RuntimeUIImageView.h */,
+				28023124213EB21500B3E4BC /* RuntimeUIImageView.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -538,6 +562,18 @@
 				28A28437213E77B500ED2473 /* Presented2HalfTransientViewController.m */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		28A28439213E88B600ED2473 /* ConfiguredView */ = {
+			isa = PBXGroup;
+			children = (
+				28A2843A213E88DF00ED2473 /* ConfiguredViewViewController.h */,
+				28A2843B213E88DF00ED2473 /* ConfiguredViewViewController.m */,
+				28A2843D213E890700ED2473 /* ConfiguredView.h */,
+				28A2843E213E890700ED2473 /* ConfiguredView.m */,
+				28A28440213E8E7000ED2473 /* ConfigredViewMarcos.h */,
+			);
+			path = ConfiguredView;
 			sourceTree = "<group>";
 		};
 		28AD308D20E71A6800525254 = {
@@ -695,6 +731,7 @@
 		28FDD8B620EF3BAC00C7A5ED /* uikit_views */ = {
 			isa = PBXGroup;
 			children = (
+				28A28439213E88B600ED2473 /* ConfiguredView */,
 				28A2842F213E70E000ED2473 /* VC */,
 				28FDD8E220F8D4AF00C7A5ED /* RichText */,
 				28FDD8B720EF3BE900C7A5ED /* UITableViewCells */,
@@ -1016,6 +1053,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28023122213EA6DE00B3E4BC /* RuntimeButton.m in Sources */,
 				28FDD8E820F8D5A000C7A5ED /* HighLinkRichText.m in Sources */,
 				28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */,
 				28FDD8D420EF84C200C7A5ED /* UIImage+UIColor.m in Sources */,
@@ -1044,9 +1082,11 @@
 				2885EE95210031E60032426F /* BBADirectBaseTableViewCell.m in Sources */,
 				28AD30FD20E7992300525254 /* TrasitionedToViewController.m in Sources */,
 				2804716F20EA440800A5FF2E /* BBAPrivateHissugTagViewContainer.m in Sources */,
+				28A2843F213E890700ED2473 /* ConfiguredView.m in Sources */,
 				2885EEBE211947160032426F /* FilaALabel.m in Sources */,
 				28AD30E920E71FBD00525254 /* MineRootViewController.m in Sources */,
 				28FDD8BA20EF3C3B00C7A5ED /* UITableViewCustomCellsController.m in Sources */,
+				2802311F213EA33000B3E4BC /* RuntimeCongfiguView.m in Sources */,
 				28AD30F720E72A4B00525254 /* HisSugViewController.m in Sources */,
 				28FDD8DE20F89F7C00C7A5ED /* BBANormalCellWithoutMasonry.m in Sources */,
 				28FDD8D120EF76AE00C7A5ED /* UIColor+BBAHexColor.m in Sources */,
@@ -1064,9 +1104,11 @@
 				28FDD8E520F8D4D800C7A5ED /* RichTextViewController.m in Sources */,
 				28A28438213E77B500ED2473 /* Presented2HalfTransientViewController.m in Sources */,
 				2804716C20EA440800A5FF2E /* BBAHisSugEventsHandler.m in Sources */,
+				28023125213EB21500B3E4BC /* RuntimeUIImageView.m in Sources */,
 				28FDD8C120EF3D5900C7A5ED /* BBAApp2DownloadTableViewCell.m in Sources */,
 				28AD310620E79D1C00525254 /* CustomPresentAnimation.m in Sources */,
 				2885EEB02117E50A0032426F /* ModuleCompileViewController.m in Sources */,
+				28A2843C213E88DF00ED2473 /* ConfiguredViewViewController.m in Sources */,
 				28AD30EC20E7209200525254 /* MainTabVC.m in Sources */,
 				28FDD8DA20EF89E200C7A5ED /* UITableViewBaseCell.m in Sources */,
 				2804717420EA440800A5FF2E /* BBASuggestionTagView.m in Sources */,
