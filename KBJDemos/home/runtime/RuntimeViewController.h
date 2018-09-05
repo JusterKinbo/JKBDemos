@@ -21,6 +21,11 @@
  * 效率的话需进行测试，方式原生生成与runtime生成时间比较即可
  button & img 各生产2个 * 10000的情况下相差1.716453 微秒，几乎无差别
  
+ 
+ 格式要求：
+ 字典：
+    key（类）：value【数组或字典】
+            如果【】里面有children必须重复上面操作
  */
 @interface RuntimeViewController : UIViewController
 

@@ -15,4 +15,6 @@
 #define BUTTON_CLASS @"RuntimeButton"
 #define BUTTON_TITLE @"title_normal"
 #define BUTTON_TITLE_COLOR @"title_color_normal"
+
+#define CHILDREN @"childs"
 #endif /* RuntimeCongfigureViewMarcos_h */

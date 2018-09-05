@@ -24,17 +24,26 @@
     NSDictionary * congfigureDictionary = @{
                                             BUTTON_CLASS:@[
                                                     @{FRAME:@"{{10,80},{100,30}}",BUTTON_TITLE:@"btn1",BUTTON_TITLE_COLOR:@"#00FF00"},
-                                                    @{FRAME:@"{{120,80},{100,30}}",BUTTON_TITLE:@"btn2",BUTTON_TITLE_COLOR:@"#00FF00"}],
+                                                    @{FRAME:@"{{120,80},{100,30}}",BUTTON_TITLE:@"btn2",BUTTON_TITLE_COLOR:@"#00FF00",
+                                                      CHILDREN:@{
+                                                              UIIMAGEVIEW_CLASS:@{ FRAME:@"{{40,5},{20,20}}",UIIMAGEVIEW_URL:@"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2515044163,2570565162&fm=27&gp=0.jpg"},
+                                                              }
+                                                      }],
                                             UIIMAGEVIEW_CLASS:@[
-                                                    @{FRAME:@"{{10,200},{100,100}}",UIIMAGEVIEW_URL:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536064671189&di=8e054983ed0ceb32d73acdb83bc25502&imgtype=0&src=http%3A%2F%2Fimg2.cache.netease.com%2Fent%2F2015%2F3%2F24%2F2015032417212918e47.jpg"},
+                                                    @{FRAME:@"{{10,200},{100,100}}",UIIMAGEVIEW_URL:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536064671189&di=8e054983ed0ceb32d73acdb83bc25502&imgtype=0&src=http%3A%2F%2Fimg2.cache.netease.com%2Fent%2F2015%2F3%2F24%2F2015032417212918e47.jpg",
+                                                      CHILDREN:@{
+                                                              BUTTON_CLASS:@{ FRAME:@"{{0,30},{100,40}}",BUTTON_TITLE:@"btn3",BUTTON_TITLE_COLOR:@"#00FF00"},
+                                                              
+                                                              }
+                                                              },
                                                     @{FRAME:@"{{120,200},{50,50}}",UIIMAGEVIEW_URL:@"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2515044163,2570565162&fm=27&gp=0.jpg"}
                                                     ],
                                             };
     NSTimeInterval timeIntervalStart = [NSDate date].timeIntervalSince1970;
-    for(int i = 0;i<10000;i++)
-    {
-        [[RuntimeCongfiguView alloc]initWithCongfiguredDictionary:congfigureDictionary];
-    }
+//    for(int i = 0;i<10000;i++)
+//    {
+//        [[RuntimeCongfiguView alloc]initWithCongfiguredDictionary:congfigureDictionary];
+//    }
     NSTimeInterval timeIntervalEnd = [NSDate date].timeIntervalSince1970;
     NSTimeInterval timeInterval = timeIntervalEnd - timeIntervalStart;
     NSDate * date = [NSDate dateWithTimeIntervalSince1970:timeInterval];
@@ -44,28 +53,37 @@
 //    NSLog(@"time elpased %@",dateStr);
     //code 写 view
     timeIntervalStart = [NSDate date].timeIntervalSince1970;
-    for(int i = 0;i<10000;i++)
-    {
-        UIButton * btn1 = [[UIButton alloc]init];
-        btn1.frame = CGRectMake(0, 0, 100, 100);
-        [btn1 setTitle:@"btn1" forState:UIControlStateNormal];
-        [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        UIButton * btn2 = [[UIButton alloc]init];
-        btn2.frame = CGRectMake(0, 0, 100, 100);
-        [btn2 setTitle:@"btn1" forState:UIControlStateNormal];
-        [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        
-        UIImageView * img1 = [[UIImageView alloc]init];
-        img1.frame = CGRectMake(0, 0, 100, 100);
-        img1.image = [UIImage imageNamed:@"games"];
-        UIImageView * img2 = [[UIImageView alloc]init];
-        img2.frame = CGRectMake(0, 0, 100, 100);
-        img2.image = [UIImage imageNamed:@"games"];
-    }
+//    for(int i = 0;i<10000;i++)
+//    {
+//        UIButton * btn1 = [[UIButton alloc]init];
+//        btn1.frame = CGRectMake(0, 0, 100, 100);
+//        [btn1 setTitle:@"btn1" forState:UIControlStateNormal];
+//        [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//        UIButton * btn2 = [[UIButton alloc]init];
+//        btn2.frame = CGRectMake(0, 0, 100, 100);
+//        [btn2 setTitle:@"btn1" forState:UIControlStateNormal];
+//        [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//
+//        UIImageView * img1 = [[UIImageView alloc]init];
+//        img1.frame = CGRectMake(0, 0, 100, 100);
+//        img1.image = [UIImage imageNamed:@"games"];
+//        UIImageView * img2 = [[UIImageView alloc]init];
+//        img2.frame = CGRectMake(0, 0, 100, 100);
+//        img2.image = [UIImage imageNamed:@"games"];
+//    }
     timeIntervalEnd = [NSDate date].timeIntervalSince1970;
      NSTimeInterval timeInterval2 = timeIntervalEnd - timeIntervalStart;
     NSLog(@"time diff is %f",timeInterval -timeInterval2);
     RuntimeCongfiguView * cfView = [[RuntimeCongfiguView alloc]initWithCongfiguredDictionary:congfigureDictionary];
+    
+    //UIButton 添加子view会在image下面
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn setTitle:@"btn4" forState:UIControlStateNormal];
+    [btn setFrame:CGRectMake(100, 400, 50, 50)];
+    UIImageView * img = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"games"]];
+    [btn addSubview:img];
+    [img setFrame:CGRectMake(0, 0, 50, 50)];
+    [self.view addSubview:btn];
     [self.view addSubview:cfView];
 }
 
