@@ -10,7 +10,7 @@
 
 @interface RuntimeUIImageView : UIImageView
 
-@property (nonatomic,strong) NSString* image_url;
-@property (nonatomic,strong) NSString* frame_string;
+@property (nonatomic,copy) NSString* image_url;
+@property (nonatomic,copy) NSString* frame_string;
 
 @end

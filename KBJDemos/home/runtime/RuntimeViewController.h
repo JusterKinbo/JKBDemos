@@ -26,6 +26,9 @@
  字典：
     key（类）：value【数组或字典】
             如果【】里面有children必须重复上面操作
+ 
+ 视图叠加考虑父子视图即可，或者先后顺序（有数组可以实现）
+ 
  */
 @interface RuntimeViewController : UIViewController
 

@@ -22,8 +22,5 @@
     [self setTitleColor:[UIColor bba_colorWithHexString:title_color_normal] forState:UIControlStateNormal];
 }
 
-- (void)setFrame_string:(NSString *)frame_string
-{
-    self.frame = CGRectFromString(frame_string);
-}
+
 @end

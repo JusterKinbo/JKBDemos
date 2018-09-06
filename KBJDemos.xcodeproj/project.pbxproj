@@ -10,6 +10,8 @@
 		2802311F213EA33000B3E4BC /* RuntimeCongfiguView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802311E213EA33000B3E4BC /* RuntimeCongfiguView.m */; };
 		28023122213EA6DE00B3E4BC /* RuntimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28023121213EA6DE00B3E4BC /* RuntimeButton.m */; };
 		28023125213EB21500B3E4BC /* RuntimeUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28023124213EB21500B3E4BC /* RuntimeUIImageView.m */; };
+		2802312C2140C27B00B3E4BC /* UIView+RuntimeConfigured.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802312B2140C27B00B3E4BC /* UIView+RuntimeConfigured.m */; };
+		2802312F2140DC6300B3E4BC /* RuntimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802312E2140DC6300B3E4BC /* RuntimeLabel.m */; };
 		2804716A20EA440800A5FF2E /* BBAAppCommonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714820EA440800A5FF2E /* BBAAppCommonInfo.m */; };
 		2804716B20EA440800A5FF2E /* BBAHisTagViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714920EA440800A5FF2E /* BBAHisTagViewFactory.m */; };
 		2804716C20EA440800A5FF2E /* BBAHisSugEventsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714A20EA440800A5FF2E /* BBAHisSugEventsHandler.m */; };
@@ -127,6 +129,10 @@
 		28023121213EA6DE00B3E4BC /* RuntimeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeButton.m; sourceTree = "<group>"; };
 		28023123213EB21500B3E4BC /* RuntimeUIImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeUIImageView.h; sourceTree = "<group>"; };
 		28023124213EB21500B3E4BC /* RuntimeUIImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeUIImageView.m; sourceTree = "<group>"; };
+		2802312A2140C27B00B3E4BC /* UIView+RuntimeConfigured.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RuntimeConfigured.h"; sourceTree = "<group>"; };
+		2802312B2140C27B00B3E4BC /* UIView+RuntimeConfigured.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RuntimeConfigured.m"; sourceTree = "<group>"; };
+		2802312D2140DC6300B3E4BC /* RuntimeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeLabel.h; sourceTree = "<group>"; };
+		2802312E2140DC6300B3E4BC /* RuntimeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeLabel.m; sourceTree = "<group>"; };
 		2804714320EA440800A5FF2E /* BBAHisSugPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisSugPageView.h; sourceTree = "<group>"; };
 		2804714520EA440800A5FF2E /* BBAHisTagViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisTagViewFactory.h; sourceTree = "<group>"; };
 		2804714620EA440800A5FF2E /* BBAHisSugEventHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisSugEventHandlerProtocol.h; sourceTree = "<group>"; };
@@ -339,6 +345,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280231262140C18F00B3E4BC /* ConfiguredView */ = {
+			isa = PBXGroup;
+			children = (
+				28023120213EA6DE00B3E4BC /* RuntimeButton.h */,
+				28023121213EA6DE00B3E4BC /* RuntimeButton.m */,
+				28023123213EB21500B3E4BC /* RuntimeUIImageView.h */,
+				28023124213EB21500B3E4BC /* RuntimeUIImageView.m */,
+				2802312A2140C27B00B3E4BC /* UIView+RuntimeConfigured.h */,
+				2802312B2140C27B00B3E4BC /* UIView+RuntimeConfigured.m */,
+				2802312D2140DC6300B3E4BC /* RuntimeLabel.h */,
+				2802312E2140DC6300B3E4BC /* RuntimeLabel.m */,
+			);
+			path = ConfiguredView;
+			sourceTree = "<group>";
+		};
 		2804714220EA440800A5FF2E /* BBAHisSug */ = {
 			isa = PBXGroup;
 			children = (
@@ -538,15 +559,12 @@
 		2885EECB211B172F0032426F /* runtime */ = {
 			isa = PBXGroup;
 			children = (
+				280231262140C18F00B3E4BC /* ConfiguredView */,
 				2885EECC211B17880032426F /* RuntimeViewController.h */,
 				2885EECD211B17880032426F /* RuntimeViewController.m */,
 				2802311C213EA31B00B3E4BC /* RuntimeCongfigureViewMarcos.h */,
 				2802311D213EA33000B3E4BC /* RuntimeCongfiguView.h */,
 				2802311E213EA33000B3E4BC /* RuntimeCongfiguView.m */,
-				28023120213EA6DE00B3E4BC /* RuntimeButton.h */,
-				28023121213EA6DE00B3E4BC /* RuntimeButton.m */,
-				28023123213EB21500B3E4BC /* RuntimeUIImageView.h */,
-				28023124213EB21500B3E4BC /* RuntimeUIImageView.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -1054,6 +1072,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28023122213EA6DE00B3E4BC /* RuntimeButton.m in Sources */,
+				2802312F2140DC6300B3E4BC /* RuntimeLabel.m in Sources */,
 				28FDD8E820F8D5A000C7A5ED /* HighLinkRichText.m in Sources */,
 				28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */,
 				28FDD8D420EF84C200C7A5ED /* UIImage+UIColor.m in Sources */,
@@ -1078,6 +1097,7 @@
 				2846CA6520ECE520003D8943 /* TransitionBottomViewController.m in Sources */,
 				28FDD8D720EF891300C7A5ED /* UITableViewModelBaseCell.m in Sources */,
 				28AD30E020E71F5300525254 /* MineNavVC.m in Sources */,
+				2802312C2140C27B00B3E4BC /* UIView+RuntimeConfigured.m in Sources */,
 				28AD30E320E71F9E00525254 /* ContactRootViewController.m in Sources */,
 				2885EE95210031E60032426F /* BBADirectBaseTableViewCell.m in Sources */,
 				28AD30FD20E7992300525254 /* TrasitionedToViewController.m in Sources */,

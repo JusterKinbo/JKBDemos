@@ -7,7 +7,7 @@
 //
 
 #import "RuntimeUIImageView.h"
-
+#import <SDWebImage/UIImageView+WebCache.h>
 @implementation RuntimeUIImageView
 
 
@@ -19,8 +19,8 @@
 
 - (void)setImage_url:(NSString *)image_url
 {
-//    self.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:image_url]]];
-    self.image = [UIImage imageNamed:@"games"];
+//    [self sd_setImageWithURL:[NSURL URLWithString:image_url] placeholderImage:[UIImage imageNamed:@"pengyuyan02"]];
+    self.image = [UIImage imageNamed:@"pengyuyan02"];
 }
 
 @end
