@@ -11,5 +11,6 @@
 @interface RuntimeCongfiguView : UIView
 
 - (instancetype)initWithCongfiguredDictionary:(NSDictionary *)dict;
-
+- (instancetype)initWithCongfiguredArray:(NSArray *)configArr;
+- (instancetype)initWithLayoutArray:(NSArray *)layoutConfigArr;
 @end

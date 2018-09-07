@@ -19,8 +19,8 @@
 
 - (void)setImage_url:(NSString *)image_url
 {
-//    [self sd_setImageWithURL:[NSURL URLWithString:image_url] placeholderImage:[UIImage imageNamed:@"pengyuyan02"]];
-    self.image = [UIImage imageNamed:@"pengyuyan02"];
+    [self sd_setImageWithURL:[NSURL URLWithString:image_url] placeholderImage:[UIImage imageNamed:@"pengyuyan02"]];
+//    self.image = [UIImage imageNamed:@"pengyuyan02"];
 }
 
 @end

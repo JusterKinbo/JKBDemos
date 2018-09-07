@@ -29,6 +29,8 @@
  
  视图叠加考虑父子视图即可，或者先后顺序（有数组可以实现）
  
+ 支持网络图片，但是富文本的attach不支持占位图
+ 
  */
 @interface RuntimeViewController : UIViewController
 

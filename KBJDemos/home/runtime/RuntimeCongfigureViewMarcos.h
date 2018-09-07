@@ -75,6 +75,15 @@
 #define LABEL_ATTRIBUTE_FONT_CONFIG_DICT_STYLE_BY_WORD @"attribute_font_config_dict_line_style_by_word"
 #define LABEL_ATTRIBUTE_FONT_CONFIG_DICT_STYLE_NONE @"attribute_font_config_dict_line_style_none"
 
+#pragma --mark 水平、垂直布局
+#define LAYOUT_STYLE @"layout_style"
+#define HORIZONTAL_LAYOUT @"horizontal_layout"
+#define LAYOUT_SUB_VIEWS @"layout_views"
+#define VIEW_CLASS @"view_class"
+#define LAYOUT_MARGIN @"layout_margin" //必须是左、上
+#define LAYOUT_SIZE @"layout_width_height"//与上面必须同时存在
+#define VERTICALL_LAYOUT @"vertical_layout"
+
 
 #define CHILDREN @"childs"
 #endif /* RuntimeCongfigureViewMarcos_h */

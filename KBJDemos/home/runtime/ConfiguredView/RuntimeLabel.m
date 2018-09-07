@@ -9,6 +9,7 @@
 #import "RuntimeLabel.h"
 #import "UIColor+BBAHexColor.h"
 #import "RuntimeCongfigureViewMarcos.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @implementation RuntimeLabel
 
@@ -203,11 +204,14 @@
         }
         NSArray * attachArr = [attribute_font_config_dict objectForKey:LABEL_ATTRIBUTE_FONT_CONFIG_DICT_ATTACHMENT];
         if(attachArr)
-        {
+        {            
             for(NSDictionary * attachDict in attachArr)
             {
                 NSTextAttachment *attach = [[NSTextAttachment alloc] init];
-                attach.image = [UIImage imageNamed:@"games"];
+                NSURL * url = [NSURL URLWithString:[attachDict objectForKey:LABEL_ATTRIBUTE_FONT_CONFIG_DICT_ATTACHMENT_IMAGE_URL]];
+//                attach.image =[UIImage imageNamed:@"games"];
+                attach.image = [UIImage imageWithData:[NSData
+                                                       dataWithContentsOfURL:[NSURL URLWithString:[attachDict objectForKey:LABEL_ATTRIBUTE_FONT_CONFIG_DICT_ATTACHMENT_IMAGE_URL]]]];
                 attach.bounds = CGRectFromString([attachDict objectForKey:LABEL_ATTRIBUTE_FONT_CONFIG_DICT_ATTACHMENT_IMAGE_BOUNDS]);
                 NSAttributedString *attachStr = [NSAttributedString attributedStringWithAttachment:attach];
                 //                [attrStr appendAttributedString:attachStr];
