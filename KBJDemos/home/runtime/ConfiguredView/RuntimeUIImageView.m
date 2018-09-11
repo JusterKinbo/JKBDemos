@@ -12,11 +12,6 @@
 
 
 
-- (void)setFrame_string:(NSString *)frame_string
-{
-    self.frame = CGRectFromString(frame_string);
-}
-
 - (void)setImage_url:(NSString *)image_url
 {
     [self sd_setImageWithURL:[NSURL URLWithString:image_url] placeholderImage:[UIImage imageNamed:@"pengyuyan02"]];

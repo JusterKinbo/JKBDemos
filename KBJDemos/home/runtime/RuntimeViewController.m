@@ -11,6 +11,8 @@
 #import "RuntimeCongfiguView.h"
 
 
+
+
 @interface RuntimeViewController ()
 {
     UIView * v1;
@@ -26,7 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"runtime + json 解析view";
-    NSArray *segmentArr = @[@"方案1",@"方案2",@"方案3"];
+    NSArray *segmentArr = @[@"同类ui放一起",@"ui一个个顺序写",@"水平垂直+frame"];
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:segmentArr];
     //设置frame
     segment.frame = CGRectMake(10, 620, self.view.frame.size.width-20, 30);
@@ -132,6 +134,9 @@
     timeIntervalEnd = [NSDate date].timeIntervalSince1970;
      NSTimeInterval timeInterval2 = timeIntervalEnd - timeIntervalStart;
     NSLog(@"time diff is %f",timeInterval -timeInterval2);
+    NSData *data_congfigureDictionary=[NSJSONSerialization dataWithJSONObject:congfigureDictionary options:NSJSONWritingPrettyPrinted error:nil];
+    NSString *jsonStr_congfigureDictionary=[[NSString alloc]initWithData:data_congfigureDictionary encoding:NSUTF8StringEncoding];
+    NSLog(@"data_congfigureDictionary json:%@",jsonStr_congfigureDictionary);
     RuntimeCongfiguView * cfView = [[RuntimeCongfiguView alloc]initWithCongfiguredDictionary:congfigureDictionary];
     [v1 addSubview:cfView];
     //改方案 -- 一个ui一个ui写，还不错
@@ -258,6 +263,9 @@
                                   ];
     RuntimeCongfiguView * cfView_layout_version = [[RuntimeCongfiguView alloc]initWithLayoutArray:layoutArray];
     [v3 addSubview:cfView_layout_version];
+    NSData *data_layoutArray=[NSJSONSerialization dataWithJSONObject:layoutArray options:NSJSONWritingPrettyPrinted error:nil];
+    NSString *jsonStr_layoutArray=[[NSString alloc]initWithData:data_layoutArray encoding:NSUTF8StringEncoding];
+    NSLog(@"data_layoutArray json:%@",jsonStr_layoutArray);
 }
 
 - (void)segmentValueChanged:(UISegmentedControl *)sender {

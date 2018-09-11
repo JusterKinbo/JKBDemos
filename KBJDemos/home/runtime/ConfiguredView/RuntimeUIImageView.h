@@ -11,6 +11,5 @@
 @interface RuntimeUIImageView : UIImageView
 
 @property (nonatomic,copy) NSString* image_url;
-@property (nonatomic,copy) NSString* frame_string;
 
 @end
