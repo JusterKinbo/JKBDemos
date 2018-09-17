@@ -78,6 +78,19 @@ typedef NS_ENUM(NSUInteger, PickerState) {
                         @{kCode:@5,kTitle:@"深圳"}
                         ];
     [self initPickerData:_picker_datas withData:_datas];
+// *********支持外部设置初始值
+//    NSArray * selected = @[
+//                                 @{
+//                                     kTitle : @"北京",
+//                                 },
+//                                 @{
+//                                     kTitle : @"东城",
+//                                 },
+//                                 @{
+//                                     kTitle : @"大鸭梨",
+//                                 }
+//                                 ];
+//    [self initPickerData:_picker_datas withData:_datas selectedData:selected];
     _pickerView.hidden = YES;
     _draggableImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"pengyuyan02"]];
     _draggableImage.frame = CGRectMake(0, 100, 50, 50);
@@ -118,6 +131,29 @@ typedef NS_ENUM(NSUInteger, PickerState) {
         }
         [_picker_datas addObject:rows];
         curArry = curArry[0][kChild];
+        componetStart += 1;
+    }while(curArry);
+}
+- (void)initPickerData:(NSMutableArray *)pickerData withData:(NSArray *)datas selectedData:(NSArray *)seletedData
+{
+    NSArray * curArry = datas;
+    NSInteger componetStart = 0;
+    do
+    {
+        NSInteger componet = 0;
+        NSMutableArray * rows = [[NSMutableArray alloc]init];
+        for (int i=0;i<curArry.count;i++) {
+            NSDictionary * tmp = curArry[i];
+            [rows addObject:tmp[kTitle]];
+            if([tmp[kTitle] isEqualToString:seletedData[componetStart][kTitle] ])
+                {
+                    componet = i;
+                    [_selectedData addObject:tmp];
+                }
+        }
+        
+        [_picker_datas addObject:rows];
+        curArry = curArry[componet][kChild];
         componetStart += 1;
     }while(curArry);
 }
