@@ -32,6 +32,9 @@
 		2804717B20EA440800A5FF2E /* his_sug_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 2804716820EA440800A5FF2E /* his_sug_delete.png */; };
 		2804717C20EA440800A5FF2E /* his_sug_show.png in Resources */ = {isa = PBXBuildFile; fileRef = 2804716920EA440800A5FF2E /* his_sug_show.png */; };
 		2804717F20EA446100A5FF2E /* BBASuggestDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804717E20EA446100A5FF2E /* BBASuggestDataItem.m */; };
+		28308F15214F8A2700EC646C /* UIView+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 28308F14214F8A2700EC646C /* UIView+Draggable.m */; };
+		28308F19214F8A7300EC646C /* CaseCadePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28308F18214F8A7300EC646C /* CaseCadePickerViewController.m */; };
+		28308F29214FC0ED00EC646C /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 28308F28214FC0ED00EC646C /* Foundation+Log.m */; };
 		283E59C12126C4BD001BD561 /* MouduleProtocolIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 283E59C02126C4BD001BD561 /* MouduleProtocolIMP.m */; };
 		2846CA5F20EB578F003D8943 /* MarcosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2846CA5E20EB578F003D8943 /* MarcosViewController.m */; };
 		2846CA6220ECE508003D8943 /* TransitionHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2846CA6120ECE508003D8943 /* TransitionHeadViewController.m */; };
@@ -169,6 +172,12 @@
 		2804716920EA440800A5FF2E /* his_sug_show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = his_sug_show.png; sourceTree = "<group>"; };
 		2804717D20EA446100A5FF2E /* BBASuggestDataItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBASuggestDataItem.h; sourceTree = "<group>"; };
 		2804717E20EA446100A5FF2E /* BBASuggestDataItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBASuggestDataItem.m; sourceTree = "<group>"; };
+		28308F13214F8A2700EC646C /* UIView+Draggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Draggable.h"; sourceTree = "<group>"; };
+		28308F14214F8A2700EC646C /* UIView+Draggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Draggable.m"; sourceTree = "<group>"; };
+		28308F17214F8A7300EC646C /* CaseCadePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaseCadePickerViewController.h; sourceTree = "<group>"; };
+		28308F18214F8A7300EC646C /* CaseCadePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaseCadePickerViewController.m; sourceTree = "<group>"; };
+		28308F28214FC0ED00EC646C /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		28308F2C214FC1FC00EC646C /* Utf8Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utf8Log.h; sourceTree = "<group>"; };
 		283E59BD2126C46A001BD561 /* MoudleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoudleProtocol.h; sourceTree = "<group>"; };
 		283E59BF2126C4BD001BD561 /* MouduleProtocolIMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouduleProtocolIMP.h; sourceTree = "<group>"; };
 		283E59C02126C4BD001BD561 /* MouduleProtocolIMP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouduleProtocolIMP.m; sourceTree = "<group>"; };
@@ -443,6 +452,40 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		280C2DDE21493BBC006666C2 /* JS2ndOC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JS2ndOC;
+			sourceTree = "<group>";
+		};
+		28308F12214F89F800EC646C /* DraggableView */ = {
+			isa = PBXGroup;
+			children = (
+				28308F13214F8A2700EC646C /* UIView+Draggable.h */,
+				28308F14214F8A2700EC646C /* UIView+Draggable.m */,
+			);
+			path = DraggableView;
+			sourceTree = "<group>";
+		};
+		28308F16214F8A3400EC646C /* CaseCadePicker */ = {
+			isa = PBXGroup;
+			children = (
+				28308F17214F8A7300EC646C /* CaseCadePickerViewController.h */,
+				28308F18214F8A7300EC646C /* CaseCadePickerViewController.m */,
+			);
+			path = CaseCadePicker;
+			sourceTree = "<group>";
+		};
+		28308F1A214FB3BA00EC646C /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				28308F28214FC0ED00EC646C /* Foundation+Log.m */,
+				28308F2C214FC1FC00EC646C /* Utf8Log.h */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 		283E59BE2126C497001BD561 /* protocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -685,6 +728,7 @@
 		28AD30ED20E720CB00525254 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				280C2DDE21493BBC006666C2 /* JS2ndOC */,
 				2885EECB211B172F0032426F /* runtime */,
 				2885EEC5211B08C50032426F /* xcode */,
 				2885EEAD2117E4D40032426F /* modules */,
@@ -749,6 +793,8 @@
 		28FDD8B620EF3BAC00C7A5ED /* uikit_views */ = {
 			isa = PBXGroup;
 			children = (
+				28308F16214F8A3400EC646C /* CaseCadePicker */,
+				28308F12214F89F800EC646C /* DraggableView */,
 				28A28439213E88B600ED2473 /* ConfiguredView */,
 				28A2842F213E70E000ED2473 /* VC */,
 				28FDD8E220F8D4AF00C7A5ED /* RichText */,
@@ -795,6 +841,7 @@
 		28FDD8CE20EF769600C7A5ED /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				28308F1A214FB3BA00EC646C /* Log */,
 				28FDD8D020EF76AE00C7A5ED /* UIColor+BBAHexColor.h */,
 				28FDD8CF20EF76AE00C7A5ED /* UIColor+BBAHexColor.m */,
 				28FDD8D220EF84C100C7A5ED /* UIImage+UIColor.h */,
@@ -1076,6 +1123,7 @@
 				28FDD8E820F8D5A000C7A5ED /* HighLinkRichText.m in Sources */,
 				28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */,
 				28FDD8D420EF84C200C7A5ED /* UIImage+UIColor.m in Sources */,
+				28308F19214F8A7300EC646C /* CaseCadePickerViewController.m in Sources */,
 				28AD30E620E71FB000525254 /* DiscoverRootViewController.m in Sources */,
 				2885EEBA211945330032426F /* FileAChildViewController.m in Sources */,
 				2885EED1211BDE890032426F /* CodeSnippetViewController.m in Sources */,
@@ -1101,6 +1149,7 @@
 				28AD30E320E71F9E00525254 /* ContactRootViewController.m in Sources */,
 				2885EE95210031E60032426F /* BBADirectBaseTableViewCell.m in Sources */,
 				28AD30FD20E7992300525254 /* TrasitionedToViewController.m in Sources */,
+				28308F29214FC0ED00EC646C /* Foundation+Log.m in Sources */,
 				2804716F20EA440800A5FF2E /* BBAPrivateHissugTagViewContainer.m in Sources */,
 				28A2843F213E890700ED2473 /* ConfiguredView.m in Sources */,
 				2885EEBE211947160032426F /* FilaALabel.m in Sources */,
@@ -1123,6 +1172,7 @@
 				2885EEB62117E53B0032426F /* FileBViewController.m in Sources */,
 				28FDD8E520F8D4D800C7A5ED /* RichTextViewController.m in Sources */,
 				28A28438213E77B500ED2473 /* Presented2HalfTransientViewController.m in Sources */,
+				28308F15214F8A2700EC646C /* UIView+Draggable.m in Sources */,
 				2804716C20EA440800A5FF2E /* BBAHisSugEventsHandler.m in Sources */,
 				28023125213EB21500B3E4BC /* RuntimeUIImageView.m in Sources */,
 				28FDD8C120EF3D5900C7A5ED /* BBAApp2DownloadTableViewCell.m in Sources */,
