@@ -30,9 +30,10 @@
     // Do any additional setup after loading the view.
     self.title = @"首页";
     //添加一个tableview
-    _table=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWith,ScreenHeight)];
+    _table=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWith,ScreenHeight) style:UITableViewStyleGrouped];
     _table.dataSource=self;
     _table.delegate=self;
+//    _table.allowsMultipleSelection = YES;//非编辑模式下也可以支持多选
     _vcs=[self getSectionAndRows];
     _table.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];//不显示底下的空list
     [self.view addSubview:_table];
@@ -42,6 +43,7 @@
 {
     NSArray * animations=@[@{@"title":@"Transition animation",@"class":@"TransitonAnimationViewController"}];
         NSArray * views=@[@{@"title":@"half presented vc",@"class":@"Present2HalfTransientViewController"},
+                          @{@"title":@"tableview",@"class":@"CustomeTableViewViewController"},
                           @{@"title":@"casecade picker view",@"class":@"CaseCadePickerViewController"},
                           @{@"title":@"congfigured view",@"class":@"ConfiguredViewViewController"},
                           @{@"title":@"Hissug",@"class":@"HisSugViewController"},
@@ -102,7 +104,11 @@
     {
         return [[_vcs objectAtIndex:section] objectForKey:@"sectionTitle"];
     }
-    
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    return @[@"Ani",@"UI",@"Tool",@"Mod",@"XC",@"RT"];
+}
+
 #pragma TableView Delegata
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     {

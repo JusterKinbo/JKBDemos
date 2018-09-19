@@ -35,6 +35,7 @@
 		28308F15214F8A2700EC646C /* UIView+Draggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 28308F14214F8A2700EC646C /* UIView+Draggable.m */; };
 		28308F19214F8A7300EC646C /* CaseCadePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28308F18214F8A7300EC646C /* CaseCadePickerViewController.m */; };
 		28308F29214FC0ED00EC646C /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 28308F28214FC0ED00EC646C /* Foundation+Log.m */; };
+		28308F3221521B8400EC646C /* CustomeTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28308F3121521B8400EC646C /* CustomeTableViewViewController.m */; };
 		283E59C12126C4BD001BD561 /* MouduleProtocolIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 283E59C02126C4BD001BD561 /* MouduleProtocolIMP.m */; };
 		2846CA5F20EB578F003D8943 /* MarcosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2846CA5E20EB578F003D8943 /* MarcosViewController.m */; };
 		2846CA6220ECE508003D8943 /* TransitionHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2846CA6120ECE508003D8943 /* TransitionHeadViewController.m */; };
@@ -178,6 +179,8 @@
 		28308F18214F8A7300EC646C /* CaseCadePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaseCadePickerViewController.m; sourceTree = "<group>"; };
 		28308F28214FC0ED00EC646C /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		28308F2C214FC1FC00EC646C /* Utf8Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utf8Log.h; sourceTree = "<group>"; };
+		28308F3021521B8400EC646C /* CustomeTableViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomeTableViewViewController.h; sourceTree = "<group>"; };
+		28308F3121521B8400EC646C /* CustomeTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomeTableViewViewController.m; sourceTree = "<group>"; };
 		283E59BD2126C46A001BD561 /* MoudleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoudleProtocol.h; sourceTree = "<group>"; };
 		283E59BF2126C4BD001BD561 /* MouduleProtocolIMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouduleProtocolIMP.h; sourceTree = "<group>"; };
 		283E59C02126C4BD001BD561 /* MouduleProtocolIMP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MouduleProtocolIMP.m; sourceTree = "<group>"; };
@@ -484,6 +487,15 @@
 				28308F2C214FC1FC00EC646C /* Utf8Log.h */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		28308F2F21521B6400EC646C /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				28308F3021521B8400EC646C /* CustomeTableViewViewController.h */,
+				28308F3121521B8400EC646C /* CustomeTableViewViewController.m */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		283E59BE2126C497001BD561 /* protocol */ = {
@@ -793,6 +805,7 @@
 		28FDD8B620EF3BAC00C7A5ED /* uikit_views */ = {
 			isa = PBXGroup;
 			children = (
+				28308F2F21521B6400EC646C /* TableView */,
 				28308F16214F8A3400EC646C /* CaseCadePicker */,
 				28308F12214F89F800EC646C /* DraggableView */,
 				28A28439213E88B600ED2473 /* ConfiguredView */,
@@ -1161,6 +1174,7 @@
 				28FDD8D120EF76AE00C7A5ED /* UIColor+BBAHexColor.m in Sources */,
 				2885EE9F21003C1E0032426F /* UITableViewWithTouchesEvent.m in Sources */,
 				28FDD8CA20EF3FC500C7A5ED /* BBAApp2DownlaodModel.m in Sources */,
+				28308F3221521B8400EC646C /* CustomeTableViewViewController.m in Sources */,
 				2885EEA2210040C50032426F /* UITableViewScrollEventDelegate.m in Sources */,
 				2885EEB32117E52F0032426F /* FileAViewController.m in Sources */,
 				2846CA6820ECE534003D8943 /* TransitionContainerViewController.m in Sources */,

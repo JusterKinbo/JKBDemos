@@ -77,20 +77,20 @@ typedef NS_ENUM(NSUInteger, PickerState) {
                         @{kCode:@4,kTitle:@"广州"},
                         @{kCode:@5,kTitle:@"深圳"}
                         ];
-    [self initPickerData:_picker_datas withData:_datas];
+//    [self initPickerData:_picker_datas withData:_datas];
 // *********支持外部设置初始值
-//    NSArray * selected = @[
-//                                 @{
-//                                     kTitle : @"北京",
-//                                 },
-//                                 @{
-//                                     kTitle : @"东城",
-//                                 },
-//                                 @{
-//                                     kTitle : @"大鸭梨",
-//                                 }
-//                                 ];
-//    [self initPickerData:_picker_datas withData:_datas selectedData:selected];
+    NSArray * selected = @[
+                                 @{
+                                     kTitle : @"北京",
+                                 },
+                                 @{
+                                     kTitle : @"东城",
+                                 },
+                                 @{
+                                     kTitle : @"大鸭梨",
+                                 }
+                                 ];
+    [self initPickerData:_picker_datas withData:_datas selectedData:selected];
     _pickerView.hidden = YES;
     _draggableImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"pengyuyan02"]];
     _draggableImage.frame = CGRectMake(0, 100, 50, 50);
@@ -149,6 +149,11 @@ typedef NS_ENUM(NSUInteger, PickerState) {
                 {
                     componet = i;
                     [_selectedData addObject:tmp];
+                    //此时数据未准备好，因此延迟一下
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                         [self->_pickerView selectRow:i inComponent:componetStart animated:NO];
+                    });
+                   
                 }
         }
         
@@ -184,9 +189,9 @@ typedef NS_ENUM(NSUInteger, PickerState) {
              [rows addObject:tmp[kTitle]];
         }
          [_picker_datas addObject:rows];
+//         [_pickerView reloadComponent:componetStart];//只考虑第几行，只有数据更新了才可用，如果是级联前面某行消失了不可用
         curArry = curArry[0][kChild];
         componetStart += 1;
-       
     }
     [_pickerView reloadAllComponents];
     NSLog(@"%@",_selectedData);
