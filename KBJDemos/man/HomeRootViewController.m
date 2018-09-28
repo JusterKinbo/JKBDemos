@@ -54,7 +54,8 @@
         NSArray * modules=@[@{@"title":@"module files",@"class":@"ModuleCompileViewController"}];
         NSArray * xcode=@[@{@"title":@"xcode template",@"class":@"XcodeTemplateViewController"},
                           @{@"title":@"code snippet",@"class":@"CodeSnippetViewController"}];
-        NSArray * runtime=@[@{@"title":@"runtime",@"class":@"RuntimeViewController"}];
+        NSArray * runtime=@[@{@"title":@"runtime",@"class":@"RuntimeViewController"},
+                            @{@"title":@"js patch",@"class":@"RuntimeJS2OCFeatureViewController"}];
         //vcs 分组容器
         NSArray * container=@[
                               @{@"sectionTitle":@"Animations",@"sectionData":animations},
