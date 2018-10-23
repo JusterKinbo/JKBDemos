@@ -7,7 +7,7 @@
 
 #ifdef DEBUG
 
-//必须结合Utf8Log才可以
+//必须结合Utf8Log才可以--支持log显示中文
 
 #import <Foundation/Foundation.h>
 

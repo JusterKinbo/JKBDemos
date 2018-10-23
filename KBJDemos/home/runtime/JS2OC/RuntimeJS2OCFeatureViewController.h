@@ -18,6 +18,9 @@
  
  JSPatch 功能
  https://blog.csdn.net/skylin19840101/article/details/52611998
+ 
+ JSPath 原理详讲
+ https://github.com/bang590/JSPatch/wiki/JSPatch-%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3
  */
 
 @interface RuntimeJS2OCFeatureViewController : UIViewController

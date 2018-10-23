@@ -12,6 +12,9 @@
 		28023125213EB21500B3E4BC /* RuntimeUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28023124213EB21500B3E4BC /* RuntimeUIImageView.m */; };
 		2802312C2140C27B00B3E4BC /* UIView+RuntimeConfigured.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802312B2140C27B00B3E4BC /* UIView+RuntimeConfigured.m */; };
 		2802312F2140DC6300B3E4BC /* RuntimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802312E2140DC6300B3E4BC /* RuntimeLabel.m */; };
+		28035509217F392A00A16601 /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28035508217F392A00A16601 /* CollectionViewViewController.swift */; };
+		2803550C217F394C00A16601 /* RichCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803550B217F394C00A16601 /* RichCollectionViewViewController.m */; };
+		2803550F217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803550E217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.m */; };
 		2804716A20EA440800A5FF2E /* BBAAppCommonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714820EA440800A5FF2E /* BBAAppCommonInfo.m */; };
 		2804716B20EA440800A5FF2E /* BBAHisTagViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714920EA440800A5FF2E /* BBAHisTagViewFactory.m */; };
 		2804716C20EA440800A5FF2E /* BBAHisSugEventsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714A20EA440800A5FF2E /* BBAHisSugEventsHandler.m */; };
@@ -138,6 +141,12 @@
 		2802312B2140C27B00B3E4BC /* UIView+RuntimeConfigured.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RuntimeConfigured.m"; sourceTree = "<group>"; };
 		2802312D2140DC6300B3E4BC /* RuntimeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeLabel.h; sourceTree = "<group>"; };
 		2802312E2140DC6300B3E4BC /* RuntimeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeLabel.m; sourceTree = "<group>"; };
+		28035507217F392900A16601 /* KBJDemos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KBJDemos-Bridging-Header.h"; sourceTree = "<group>"; };
+		28035508217F392A00A16601 /* CollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewViewController.swift; sourceTree = "<group>"; };
+		2803550A217F394C00A16601 /* RichCollectionViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichCollectionViewViewController.h; sourceTree = "<group>"; };
+		2803550B217F394C00A16601 /* RichCollectionViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichCollectionViewViewController.m; sourceTree = "<group>"; };
+		2803550D217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleLayout_UICollectionViewLayout.h; sourceTree = "<group>"; };
+		2803550E217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleLayout_UICollectionViewLayout.m; sourceTree = "<group>"; };
 		2804714320EA440800A5FF2E /* BBAHisSugPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisSugPageView.h; sourceTree = "<group>"; };
 		2804714520EA440800A5FF2E /* BBAHisTagViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisTagViewFactory.h; sourceTree = "<group>"; };
 		2804714620EA440800A5FF2E /* BBAHisSugEventHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisSugEventHandlerProtocol.h; sourceTree = "<group>"; };
@@ -373,6 +382,18 @@
 				2802312E2140DC6300B3E4BC /* RuntimeLabel.m */,
 			);
 			path = ConfiguredView;
+			sourceTree = "<group>";
+		};
+		28035506217F38F800A16601 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				28035508217F392A00A16601 /* CollectionViewViewController.swift */,
+				2803550A217F394C00A16601 /* RichCollectionViewViewController.h */,
+				2803550B217F394C00A16601 /* RichCollectionViewViewController.m */,
+				2803550D217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.h */,
+				2803550E217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.m */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		2804714220EA440800A5FF2E /* BBAHisSug */ = {
@@ -818,6 +839,7 @@
 		28FDD8B620EF3BAC00C7A5ED /* uikit_views */ = {
 			isa = PBXGroup;
 			children = (
+				28035506217F38F800A16601 /* CollectionView */,
 				28308F2F21521B6400EC646C /* TableView */,
 				28308F16214F8A3400EC646C /* CaseCadePicker */,
 				28308F12214F89F800EC646C /* DraggableView */,
@@ -872,6 +894,7 @@
 				28FDD8CF20EF76AE00C7A5ED /* UIColor+BBAHexColor.m */,
 				28FDD8D220EF84C100C7A5ED /* UIImage+UIColor.h */,
 				28FDD8D320EF84C100C7A5ED /* UIImage+UIColor.m */,
+				28035507217F392900A16601 /* KBJDemos-Bridging-Header.h */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -992,6 +1015,7 @@
 				TargetAttributes = {
 					28AD309520E71A6800525254 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					28AD30B020E71A6800525254 = {
@@ -1149,6 +1173,7 @@
 				28FDD8E820F8D5A000C7A5ED /* HighLinkRichText.m in Sources */,
 				28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */,
 				28FDD8D420EF84C200C7A5ED /* UIImage+UIColor.m in Sources */,
+				2803550C217F394C00A16601 /* RichCollectionViewViewController.m in Sources */,
 				28308F19214F8A7300EC646C /* CaseCadePickerViewController.m in Sources */,
 				28AD30E620E71FB000525254 /* DiscoverRootViewController.m in Sources */,
 				2885EEBA211945330032426F /* FileAChildViewController.m in Sources */,
@@ -1177,6 +1202,7 @@
 				28AD30FD20E7992300525254 /* TrasitionedToViewController.m in Sources */,
 				28308F29214FC0ED00EC646C /* Foundation+Log.m in Sources */,
 				2804716F20EA440800A5FF2E /* BBAPrivateHissugTagViewContainer.m in Sources */,
+				2803550F217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.m in Sources */,
 				28A2843F213E890700ED2473 /* ConfiguredView.m in Sources */,
 				2885EEBE211947160032426F /* FilaALabel.m in Sources */,
 				28AD30E920E71FBD00525254 /* MineRootViewController.m in Sources */,
@@ -1186,6 +1212,7 @@
 				28FDD8DE20F89F7C00C7A5ED /* BBANormalCellWithoutMasonry.m in Sources */,
 				28FDD8D120EF76AE00C7A5ED /* UIColor+BBAHexColor.m in Sources */,
 				2885EE9F21003C1E0032426F /* UITableViewWithTouchesEvent.m in Sources */,
+				28035509217F392A00A16601 /* CollectionViewViewController.swift in Sources */,
 				28FDD8CA20EF3FC500C7A5ED /* BBAApp2DownlaodModel.m in Sources */,
 				28308F3221521B8400EC646C /* CustomeTableViewViewController.m in Sources */,
 				2885EEA2210040C50032426F /* UITableViewScrollEventDelegate.m in Sources */,
@@ -1385,6 +1412,7 @@
 			baseConfigurationReference = D261F96150FE68F7F07895DB /* Pods-KBJDemos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GCZ6V5R7Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1393,6 +1421,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juster.KBJDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Juster/codes/KBJDemos/KBJDemos/utils/KBJDemos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1402,6 +1433,7 @@
 			baseConfigurationReference = 78C541F8CD334AFECACB6B94 /* Pods-KBJDemos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GCZ6V5R7Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1410,6 +1442,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juster.KBJDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Juster/codes/KBJDemos/KBJDemos/utils/KBJDemos-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1418,6 +1452,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DFDB0F026F234DC36533FAFF /* Pods-KBJDemosTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GCZ6V5R7Z;
@@ -1434,6 +1469,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5299ED9D8ADB771C2643CBD2 /* Pods-KBJDemosTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GCZ6V5R7Z;
@@ -1450,6 +1486,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7DB6E3F1A013143F82922BC /* Pods-KBJDemosUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GCZ6V5R7Z;
 				INFOPLIST_FILE = KBJDemosUITests/Info.plist;
@@ -1465,6 +1502,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35E1BD8FFCA722D556F9EDE2 /* Pods-KBJDemosUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GCZ6V5R7Z;
 				INFOPLIST_FILE = KBJDemosUITests/Info.plist;
