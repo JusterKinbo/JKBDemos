@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CircleLayout_UICollectionViewLayout : UICollectionViewLayout
+@interface CircleLayout_UICollectionViewLayout : UICollectionViewFlowLayout
 
 //这个int值存储有多少个item
 @property (nonatomic,assign) int itemCount;

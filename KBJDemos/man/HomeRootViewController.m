@@ -48,7 +48,9 @@
                           @{@"title":@"congfigured view",@"class":@"ConfiguredViewViewController"},
                           @{@"title":@"Hissug",@"class":@"HisSugViewController"},
                           @{@"title":@"custom cells",@"class":@"UITableViewCustomCellsController"},
-                          @{@"title":@"collection vc",@"class":@"RichCollectionViewViewController"},
+                          @{@"title":@"decoration view -> collection vc",@"class":@"Decoration_CollectionViewController"},
+                          @{@"title":@"normal -> collection vc",@"class":@"NormalCollectionViewController"},
+                          @{@"title":@"rich effect -> tcollection vc",@"class":@"RichCollectionViewViewController"},
                           @{@"title":@"rich text",@"class":@"RichTextViewController"},];
         NSArray * marcos=@[@{@"title":@"Marcos",@"class":@"MarcosViewController"}];
         NSArray * privateApis=@[@{@"title":@"which app is installed",@"class":@"PrivateAPIViewController"}];

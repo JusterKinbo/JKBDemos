@@ -15,6 +15,18 @@
 		28035509217F392A00A16601 /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28035508217F392A00A16601 /* CollectionViewViewController.swift */; };
 		2803550C217F394C00A16601 /* RichCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803550B217F394C00A16601 /* RichCollectionViewViewController.m */; };
 		2803550F217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803550E217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.m */; };
+		2803551421800AAB00A16601 /* NormalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803551321800AAB00A16601 /* NormalCollectionViewController.m */; };
+		2803551721800D3300A16601 /* NormalCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803551621800D3300A16601 /* NormalCollectionHeaderView.m */; };
+		2803551A21800D4400A16601 /* NormalCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803551921800D4400A16601 /* NormalCollectionFooterView.m */; };
+		2803551D21800D7900A16601 /* NoramlTitleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803551C21800D7900A16601 /* NoramlTitleCollectionViewCell.m */; };
+		280355202180112F00A16601 /* NormalCollectionHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803551F2180112F00A16601 /* NormalCollectionHeaderModel.m */; };
+		280355232180121100A16601 /* NormalCollectionFooterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 280355222180121100A16601 /* NormalCollectionFooterModel.m */; };
+		280355262180131400A16601 /* NormalColltionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 280355252180131400A16601 /* NormalColltionViewCellModel.m */; };
+		2803552A218060DC00A16601 /* XLPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 28035529218060DC00A16601 /* XLPlainFlowLayout.m */; };
+		2803552E21806F2A00A16601 /* Decoration_UICollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803552D21806F2A00A16601 /* Decoration_UICollectionViewLayoutAttributes.m */; };
+		2803553121806FE900A16601 /* Decoration_CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803553021806FE900A16601 /* Decoration_CollectionReusableView.m */; };
+		280355342180725600A16601 /* Decoration_UICollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 280355332180725600A16601 /* Decoration_UICollectionViewFlowLayout.m */; };
+		280355372180731100A16601 /* Decoration_CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280355362180731100A16601 /* Decoration_CollectionViewController.m */; };
 		2804716A20EA440800A5FF2E /* BBAAppCommonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714820EA440800A5FF2E /* BBAAppCommonInfo.m */; };
 		2804716B20EA440800A5FF2E /* BBAHisTagViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714920EA440800A5FF2E /* BBAHisTagViewFactory.m */; };
 		2804716C20EA440800A5FF2E /* BBAHisSugEventsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804714A20EA440800A5FF2E /* BBAHisSugEventsHandler.m */; };
@@ -147,6 +159,30 @@
 		2803550B217F394C00A16601 /* RichCollectionViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichCollectionViewViewController.m; sourceTree = "<group>"; };
 		2803550D217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleLayout_UICollectionViewLayout.h; sourceTree = "<group>"; };
 		2803550E217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleLayout_UICollectionViewLayout.m; sourceTree = "<group>"; };
+		2803551221800AAB00A16601 /* NormalCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalCollectionViewController.h; sourceTree = "<group>"; };
+		2803551321800AAB00A16601 /* NormalCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalCollectionViewController.m; sourceTree = "<group>"; };
+		2803551521800D3300A16601 /* NormalCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalCollectionHeaderView.h; sourceTree = "<group>"; };
+		2803551621800D3300A16601 /* NormalCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalCollectionHeaderView.m; sourceTree = "<group>"; };
+		2803551821800D4400A16601 /* NormalCollectionFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalCollectionFooterView.h; sourceTree = "<group>"; };
+		2803551921800D4400A16601 /* NormalCollectionFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalCollectionFooterView.m; sourceTree = "<group>"; };
+		2803551B21800D7900A16601 /* NoramlTitleCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoramlTitleCollectionViewCell.h; sourceTree = "<group>"; };
+		2803551C21800D7900A16601 /* NoramlTitleCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoramlTitleCollectionViewCell.m; sourceTree = "<group>"; };
+		2803551E2180112F00A16601 /* NormalCollectionHeaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalCollectionHeaderModel.h; sourceTree = "<group>"; };
+		2803551F2180112F00A16601 /* NormalCollectionHeaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalCollectionHeaderModel.m; sourceTree = "<group>"; };
+		280355212180121100A16601 /* NormalCollectionFooterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalCollectionFooterModel.h; sourceTree = "<group>"; };
+		280355222180121100A16601 /* NormalCollectionFooterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalCollectionFooterModel.m; sourceTree = "<group>"; };
+		280355242180131400A16601 /* NormalColltionViewCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalColltionViewCellModel.h; sourceTree = "<group>"; };
+		280355252180131400A16601 /* NormalColltionViewCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalColltionViewCellModel.m; sourceTree = "<group>"; };
+		28035528218060DC00A16601 /* XLPlainFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLPlainFlowLayout.h; sourceTree = "<group>"; };
+		28035529218060DC00A16601 /* XLPlainFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLPlainFlowLayout.m; sourceTree = "<group>"; };
+		2803552C21806F2A00A16601 /* Decoration_UICollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decoration_UICollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		2803552D21806F2A00A16601 /* Decoration_UICollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Decoration_UICollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		2803552F21806FE900A16601 /* Decoration_CollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decoration_CollectionReusableView.h; sourceTree = "<group>"; };
+		2803553021806FE900A16601 /* Decoration_CollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Decoration_CollectionReusableView.m; sourceTree = "<group>"; };
+		280355322180725600A16601 /* Decoration_UICollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decoration_UICollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		280355332180725600A16601 /* Decoration_UICollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Decoration_UICollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		280355352180731100A16601 /* Decoration_CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decoration_CollectionViewController.h; sourceTree = "<group>"; };
+		280355362180731100A16601 /* Decoration_CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Decoration_CollectionViewController.m; sourceTree = "<group>"; };
 		2804714320EA440800A5FF2E /* BBAHisSugPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisSugPageView.h; sourceTree = "<group>"; };
 		2804714520EA440800A5FF2E /* BBAHisTagViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisTagViewFactory.h; sourceTree = "<group>"; };
 		2804714620EA440800A5FF2E /* BBAHisSugEventHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAHisSugEventHandlerProtocol.h; sourceTree = "<group>"; };
@@ -387,13 +423,69 @@
 		28035506217F38F800A16601 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				2803552B21806F0E00A16601 /* DecorationView */,
+				2803551121800A7F00A16601 /* NormalCollection */,
+				2803551021800A6D00A16601 /* RichCollection */,
 				28035508217F392A00A16601 /* CollectionViewViewController.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		2803551021800A6D00A16601 /* RichCollection */ = {
+			isa = PBXGroup;
+			children = (
 				2803550A217F394C00A16601 /* RichCollectionViewViewController.h */,
 				2803550B217F394C00A16601 /* RichCollectionViewViewController.m */,
 				2803550D217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.h */,
 				2803550E217F3B4900A16601 /* CircleLayout_UICollectionViewLayout.m */,
 			);
-			path = CollectionView;
+			path = RichCollection;
+			sourceTree = "<group>";
+		};
+		2803551121800A7F00A16601 /* NormalCollection */ = {
+			isa = PBXGroup;
+			children = (
+				28035527218060AB00A16601 /* PinnedHeader */,
+				2803551221800AAB00A16601 /* NormalCollectionViewController.h */,
+				2803551321800AAB00A16601 /* NormalCollectionViewController.m */,
+				2803551521800D3300A16601 /* NormalCollectionHeaderView.h */,
+				2803551621800D3300A16601 /* NormalCollectionHeaderView.m */,
+				2803551821800D4400A16601 /* NormalCollectionFooterView.h */,
+				2803551921800D4400A16601 /* NormalCollectionFooterView.m */,
+				2803551B21800D7900A16601 /* NoramlTitleCollectionViewCell.h */,
+				2803551C21800D7900A16601 /* NoramlTitleCollectionViewCell.m */,
+				2803551E2180112F00A16601 /* NormalCollectionHeaderModel.h */,
+				2803551F2180112F00A16601 /* NormalCollectionHeaderModel.m */,
+				280355212180121100A16601 /* NormalCollectionFooterModel.h */,
+				280355222180121100A16601 /* NormalCollectionFooterModel.m */,
+				280355242180131400A16601 /* NormalColltionViewCellModel.h */,
+				280355252180131400A16601 /* NormalColltionViewCellModel.m */,
+			);
+			path = NormalCollection;
+			sourceTree = "<group>";
+		};
+		28035527218060AB00A16601 /* PinnedHeader */ = {
+			isa = PBXGroup;
+			children = (
+				28035528218060DC00A16601 /* XLPlainFlowLayout.h */,
+				28035529218060DC00A16601 /* XLPlainFlowLayout.m */,
+			);
+			path = PinnedHeader;
+			sourceTree = "<group>";
+		};
+		2803552B21806F0E00A16601 /* DecorationView */ = {
+			isa = PBXGroup;
+			children = (
+				2803552C21806F2A00A16601 /* Decoration_UICollectionViewLayoutAttributes.h */,
+				2803552D21806F2A00A16601 /* Decoration_UICollectionViewLayoutAttributes.m */,
+				2803552F21806FE900A16601 /* Decoration_CollectionReusableView.h */,
+				2803553021806FE900A16601 /* Decoration_CollectionReusableView.m */,
+				280355322180725600A16601 /* Decoration_UICollectionViewFlowLayout.h */,
+				280355332180725600A16601 /* Decoration_UICollectionViewFlowLayout.m */,
+				280355352180731100A16601 /* Decoration_CollectionViewController.h */,
+				280355362180731100A16601 /* Decoration_CollectionViewController.m */,
+			);
+			path = DecorationView;
 			sourceTree = "<group>";
 		};
 		2804714220EA440800A5FF2E /* BBAHisSug */ = {
@@ -1172,11 +1264,15 @@
 				2802312F2140DC6300B3E4BC /* RuntimeLabel.m in Sources */,
 				28FDD8E820F8D5A000C7A5ED /* HighLinkRichText.m in Sources */,
 				28AD309E20E71A6800525254 /* TransitonAnimationViewController.m in Sources */,
+				280355342180725600A16601 /* Decoration_UICollectionViewFlowLayout.m in Sources */,
 				28FDD8D420EF84C200C7A5ED /* UIImage+UIColor.m in Sources */,
 				2803550C217F394C00A16601 /* RichCollectionViewViewController.m in Sources */,
+				2803551D21800D7900A16601 /* NoramlTitleCollectionViewCell.m in Sources */,
 				28308F19214F8A7300EC646C /* CaseCadePickerViewController.m in Sources */,
 				28AD30E620E71FB000525254 /* DiscoverRootViewController.m in Sources */,
 				2885EEBA211945330032426F /* FileAChildViewController.m in Sources */,
+				2803551721800D3300A16601 /* NormalCollectionHeaderView.m in Sources */,
+				280355232180121100A16601 /* NormalCollectionFooterModel.m in Sources */,
 				2885EED1211BDE890032426F /* CodeSnippetViewController.m in Sources */,
 				2804717020EA440800A5FF2E /* BBAHisSugTagViewContainer.m in Sources */,
 				28AD310320E79BD000525254 /* CustomPopAnimation.m in Sources */,
@@ -1192,12 +1288,14 @@
 				2885EEA821097A520032426F /* BBADirectAppletTableViewCell_RelativePos.m in Sources */,
 				28FDD8E120F8A01100C7A5ED /* BBANormalCellModelWithoutMasonry.m in Sources */,
 				2846CA6220ECE508003D8943 /* TransitionHeadViewController.m in Sources */,
+				2803551421800AAB00A16601 /* NormalCollectionViewController.m in Sources */,
 				2804717520EA440800A5FF2E /* BBAHisSugTagView.m in Sources */,
 				2846CA6520ECE520003D8943 /* TransitionBottomViewController.m in Sources */,
 				28FDD8D720EF891300C7A5ED /* UITableViewModelBaseCell.m in Sources */,
 				28AD30E020E71F5300525254 /* MineNavVC.m in Sources */,
 				2802312C2140C27B00B3E4BC /* UIView+RuntimeConfigured.m in Sources */,
 				28AD30E320E71F9E00525254 /* ContactRootViewController.m in Sources */,
+				280355372180731100A16601 /* Decoration_CollectionViewController.m in Sources */,
 				2885EE95210031E60032426F /* BBADirectBaseTableViewCell.m in Sources */,
 				28AD30FD20E7992300525254 /* TrasitionedToViewController.m in Sources */,
 				28308F29214FC0ED00EC646C /* Foundation+Log.m in Sources */,
@@ -1210,6 +1308,7 @@
 				2802311F213EA33000B3E4BC /* RuntimeCongfiguView.m in Sources */,
 				28AD30F720E72A4B00525254 /* HisSugViewController.m in Sources */,
 				28FDD8DE20F89F7C00C7A5ED /* BBANormalCellWithoutMasonry.m in Sources */,
+				2803552A218060DC00A16601 /* XLPlainFlowLayout.m in Sources */,
 				28FDD8D120EF76AE00C7A5ED /* UIColor+BBAHexColor.m in Sources */,
 				2885EE9F21003C1E0032426F /* UITableViewWithTouchesEvent.m in Sources */,
 				28035509217F392A00A16601 /* CollectionViewViewController.swift in Sources */,
@@ -1222,6 +1321,7 @@
 				28FDD8EF20FD9A4F00C7A5ED /* PrivateAPIViewController.m in Sources */,
 				2804717320EA440800A5FF2E /* BBAHisSugPageView.m in Sources */,
 				28FDD8BE20EF3D4500C7A5ED /* BBAAppletTableViewCell.m in Sources */,
+				2803552E21806F2A00A16601 /* Decoration_UICollectionViewLayoutAttributes.m in Sources */,
 				2885EEC8211B091F0032426F /* XcodeTemplateViewController.m in Sources */,
 				28AD30DA20E71F0E00525254 /* ContactNavVC.m in Sources */,
 				2885EEB62117E53B0032426F /* FileBViewController.m in Sources */,
@@ -1241,12 +1341,16 @@
 				2804716B20EA440800A5FF2E /* BBAHisTagViewFactory.m in Sources */,
 				2804717220EA440800A5FF2E /* BBASuggestionTagViewContainer.m in Sources */,
 				28AD310020E79AB500525254 /* CustomPushAnimation.m in Sources */,
+				280355262180131400A16601 /* NormalColltionViewCellModel.m in Sources */,
 				28AD30D020E71B5F00525254 /* HomeRootViewController.m in Sources */,
 				28AD30AC20E71A6800525254 /* main.m in Sources */,
 				2804717F20EA446100A5FF2E /* BBASuggestDataItem.m in Sources */,
+				2803551A21800D4400A16601 /* NormalCollectionFooterView.m in Sources */,
 				2885EE9B2100386B0032426F /* UITableViewCustomeCellTouchTableViewDelegate.m in Sources */,
 				28FDD8C720EF3FA600C7A5ED /* BBAAppletCellModel.m in Sources */,
 				2885EEC1211947260032426F /* FileAChildLabel.m in Sources */,
+				280355202180112F00A16601 /* NormalCollectionHeaderModel.m in Sources */,
+				2803553121806FE900A16601 /* Decoration_CollectionReusableView.m in Sources */,
 				2885EE98210032CC0032426F /* BBADirectBaseTableViewModel.m in Sources */,
 				2804717120EA440800A5FF2E /* BBAHistoryTagViewContainer.m in Sources */,
 				2804716A20EA440800A5FF2E /* BBAAppCommonInfo.m in Sources */,
