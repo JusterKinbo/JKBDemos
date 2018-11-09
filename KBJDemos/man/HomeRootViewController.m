@@ -48,6 +48,7 @@
                           @{@"title":@"congfigured view",@"class":@"ConfiguredViewViewController"},
                           @{@"title":@"Hissug",@"class":@"HisSugViewController"},
                           @{@"title":@"custom cells",@"class":@"UITableViewCustomCellsController"},
+                          @{@"title":@"coverd vc",@"class":@"CoveredVCViewController"},
                           @{@"title":@"decoration view -> collection vc",@"class":@"Decoration_CollectionViewController"},
                           @{@"title":@"normal -> collection vc",@"class":@"NormalCollectionViewController"},
                           @{@"title":@"rich effect -> tcollection vc",@"class":@"RichCollectionViewViewController"},
@@ -122,5 +123,6 @@
         [self.navigationController pushViewController:vcc animated:YES];
         
     }
+
 
 @end

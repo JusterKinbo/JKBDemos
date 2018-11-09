@@ -11,7 +11,7 @@
 @class BBAHisSugTagView;
 @class BBASuggestDataItem;
 
-__attribute__((objc_subclassing_restricted))
+__attribute__((objc_subclassing_restricted))//防止被子类化，也可防止被子类重写
 @interface BBAHisTagViewFactory : NSObject
 
 + (instancetype)sharedBBAHisTagViewFactory;

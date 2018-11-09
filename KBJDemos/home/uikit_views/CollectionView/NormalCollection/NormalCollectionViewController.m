@@ -272,5 +272,24 @@
 }
 
 
+#pragma --mark scroll
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"scrollViewDid scroll");
+}
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    NSLog(@"will begin scroll");
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSLog(@"did end scroll");
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    NSLog(@"did end drag scroll");
+}
 @end

@@ -74,6 +74,9 @@
 		2885EECA211B126A0032426F /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2885EEC9211B126A0032426F /* IDETemplateMacros.plist */; };
 		2885EECE211B17880032426F /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EECD211B17880032426F /* RuntimeViewController.m */; };
 		2885EED1211BDE890032426F /* CodeSnippetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885EED0211BDE890032426F /* CodeSnippetViewController.m */; };
+		288DD4002181BF6100B653B7 /* CoveredVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288DD3FF2181BF6100B653B7 /* CoveredVCViewController.m */; };
+		288DD4032181BFAE00B653B7 /* CoverdVCAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288DD4022181BFAE00B653B7 /* CoverdVCAViewController.m */; };
+		288DD4062181BFBB00B653B7 /* ConverdVCBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288DD4052181BFBB00B653B7 /* ConverdVCBViewController.m */; };
 		28A28432213E716400ED2473 /* Present2HalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28431213E716400ED2473 /* Present2HalfTransientViewController.m */; };
 		28A28435213E718000ED2473 /* PresentedHalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28434213E718000ED2473 /* PresentedHalfTransientViewController.m */; };
 		28A28438213E77B500ED2473 /* Presented2HalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28437213E77B500ED2473 /* Presented2HalfTransientViewController.m */; };
@@ -275,6 +278,12 @@
 		2885EECD211B17880032426F /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
 		2885EECF211BDE880032426F /* CodeSnippetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeSnippetViewController.h; sourceTree = "<group>"; };
 		2885EED0211BDE890032426F /* CodeSnippetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeSnippetViewController.m; sourceTree = "<group>"; };
+		288DD3FE2181BF6100B653B7 /* CoveredVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoveredVCViewController.h; sourceTree = "<group>"; };
+		288DD3FF2181BF6100B653B7 /* CoveredVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoveredVCViewController.m; sourceTree = "<group>"; };
+		288DD4012181BFAE00B653B7 /* CoverdVCAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverdVCAViewController.h; sourceTree = "<group>"; };
+		288DD4022181BFAE00B653B7 /* CoverdVCAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverdVCAViewController.m; sourceTree = "<group>"; };
+		288DD4042181BFBB00B653B7 /* ConverdVCBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConverdVCBViewController.h; sourceTree = "<group>"; };
+		288DD4052181BFBB00B653B7 /* ConverdVCBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConverdVCBViewController.m; sourceTree = "<group>"; };
 		28A28430213E716400ED2473 /* Present2HalfTransientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Present2HalfTransientViewController.h; sourceTree = "<group>"; };
 		28A28431213E716400ED2473 /* Present2HalfTransientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Present2HalfTransientViewController.m; sourceTree = "<group>"; };
 		28A28433213E718000ED2473 /* PresentedHalfTransientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentedHalfTransientViewController.h; sourceTree = "<group>"; };
@@ -741,6 +750,19 @@
 			path = runtime;
 			sourceTree = "<group>";
 		};
+		288DD3FD2181BF4500B653B7 /* CoveredVC */ = {
+			isa = PBXGroup;
+			children = (
+				288DD3FE2181BF6100B653B7 /* CoveredVCViewController.h */,
+				288DD3FF2181BF6100B653B7 /* CoveredVCViewController.m */,
+				288DD4012181BFAE00B653B7 /* CoverdVCAViewController.h */,
+				288DD4022181BFAE00B653B7 /* CoverdVCAViewController.m */,
+				288DD4042181BFBB00B653B7 /* ConverdVCBViewController.h */,
+				288DD4052181BFBB00B653B7 /* ConverdVCBViewController.m */,
+			);
+			path = CoveredVC;
+			sourceTree = "<group>";
+		};
 		28A2842F213E70E000ED2473 /* VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -931,6 +953,7 @@
 		28FDD8B620EF3BAC00C7A5ED /* uikit_views */ = {
 			isa = PBXGroup;
 			children = (
+				288DD3FD2181BF4500B653B7 /* CoveredVC */,
 				28035506217F38F800A16601 /* CollectionView */,
 				28308F2F21521B6400EC646C /* TableView */,
 				28308F16214F8A3400EC646C /* CaseCadePicker */,
@@ -1276,6 +1299,7 @@
 				2885EED1211BDE890032426F /* CodeSnippetViewController.m in Sources */,
 				2804717020EA440800A5FF2E /* BBAHisSugTagViewContainer.m in Sources */,
 				28AD310320E79BD000525254 /* CustomPopAnimation.m in Sources */,
+				288DD4062181BFBB00B653B7 /* ConverdVCBViewController.m in Sources */,
 				283E59C12126C4BD001BD561 /* MouduleProtocolIMP.m in Sources */,
 				28A28435213E718000ED2473 /* PresentedHalfTransientViewController.m in Sources */,
 				2885EECE211B17880032426F /* RuntimeViewController.m in Sources */,
@@ -1312,6 +1336,7 @@
 				28FDD8D120EF76AE00C7A5ED /* UIColor+BBAHexColor.m in Sources */,
 				2885EE9F21003C1E0032426F /* UITableViewWithTouchesEvent.m in Sources */,
 				28035509217F392A00A16601 /* CollectionViewViewController.swift in Sources */,
+				288DD4002181BF6100B653B7 /* CoveredVCViewController.m in Sources */,
 				28FDD8CA20EF3FC500C7A5ED /* BBAApp2DownlaodModel.m in Sources */,
 				28308F3221521B8400EC646C /* CustomeTableViewViewController.m in Sources */,
 				2885EEA2210040C50032426F /* UITableViewScrollEventDelegate.m in Sources */,
@@ -1328,6 +1353,7 @@
 				28FDD8E520F8D4D800C7A5ED /* RichTextViewController.m in Sources */,
 				28A28438213E77B500ED2473 /* Presented2HalfTransientViewController.m in Sources */,
 				28308F15214F8A2700EC646C /* UIView+Draggable.m in Sources */,
+				288DD4032181BFAE00B653B7 /* CoverdVCAViewController.m in Sources */,
 				2804716C20EA440800A5FF2E /* BBAHisSugEventsHandler.m in Sources */,
 				28023125213EB21500B3E4BC /* RuntimeUIImageView.m in Sources */,
 				28FDD8C120EF3D5900C7A5ED /* BBAApp2DownloadTableViewCell.m in Sources */,
