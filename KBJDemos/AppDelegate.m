@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "MainTabVC.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
 
@@ -21,6 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     MainTabVC * tabVC = [[MainTabVC alloc]init];
+    tabVC.delegate = self;
     
     self.window.rootViewController = tabVC;
     
@@ -30,6 +31,11 @@
     return YES;
 }
 
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    //对当前tab点击也会触发此方法
+    NSLog(@"didSelectViewController");
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

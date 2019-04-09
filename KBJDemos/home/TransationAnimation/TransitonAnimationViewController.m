@@ -42,6 +42,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Trasition Animation";
+    
+    NSDate * date1 = [NSDate date];
+    NSTimeInterval date1Time = [date1 timeIntervalSince1970] * 1000;
+    NSLog(@"时间 date1  : %f",date1Time);
+    
+//    [self performSelector:@selector(logTime) withObject:nil afterDelay:1];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSDate * date3 = [NSDate date];
+            NSTimeInterval date3Time = [date3 timeIntervalSince1970] * 1000;
+            NSLog(@"时间 date3  : %f",date3Time);
+        });
+       
+    });
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSDate * date4 = [NSDate date];
+            NSTimeInterval date4Time = [date4 timeIntervalSince1970] * 1000;
+            NSLog(@"时间 date4  : %f",date4Time);
+        });
+        
+    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            NSDate * date4 = [NSDate date];
+//            NSTimeInterval date4Time = [date4 timeIntervalSince1970] * 1000;
+//            NSLog(@"时间 date4  : %f",date4Time);
+//        });
+//    });
+    NSDate * date2 = [NSDate date];
+    NSTimeInterval date2Time = [date2 timeIntervalSince1970] * 1000;
+    NSLog(@"时间 date2  : %f",date2Time);
+    
     // Do any additional setup after loading the view, typically from a nib.
     UIButton * modalTransition = [UIButton buttonWithType:UIButtonTypeSystem];
     [modalTransition setTitle:@"modal 转场动画" forState: UIControlStateNormal];
@@ -78,7 +112,14 @@
     //转场动画
     self.navigationController.delegate = self;
 }
-    
+
+- (void)logTime
+{
+    NSDate * date3 = [NSDate date];
+    NSTimeInterval date3Time = [date3 timeIntervalSince1970] * 1000;
+    NSLog(@"时间 date3  : %f",date3Time);
+}
+
 - (void)modalAnis
 {
     TrasitionedToViewController * vc = [[TrasitionedToViewController alloc]init];

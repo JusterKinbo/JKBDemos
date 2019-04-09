@@ -77,6 +77,8 @@
 		288DD4002181BF6100B653B7 /* CoveredVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288DD3FF2181BF6100B653B7 /* CoveredVCViewController.m */; };
 		288DD4032181BFAE00B653B7 /* CoverdVCAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288DD4022181BFAE00B653B7 /* CoverdVCAViewController.m */; };
 		288DD4062181BFBB00B653B7 /* ConverdVCBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288DD4052181BFBB00B653B7 /* ConverdVCBViewController.m */; };
+		2896B3EF225C770600B6019F /* Gesture2TouchEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2896B3EE225C770600B6019F /* Gesture2TouchEventsViewController.m */; };
+		2896B3F2225C772E00B6019F /* TapGesture2ndTouchEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2896B3F1225C772E00B6019F /* TapGesture2ndTouchEventView.m */; };
 		28A28432213E716400ED2473 /* Present2HalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28431213E716400ED2473 /* Present2HalfTransientViewController.m */; };
 		28A28435213E718000ED2473 /* PresentedHalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28434213E718000ED2473 /* PresentedHalfTransientViewController.m */; };
 		28A28438213E77B500ED2473 /* Presented2HalfTransientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A28437213E77B500ED2473 /* Presented2HalfTransientViewController.m */; };
@@ -284,6 +286,10 @@
 		288DD4022181BFAE00B653B7 /* CoverdVCAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverdVCAViewController.m; sourceTree = "<group>"; };
 		288DD4042181BFBB00B653B7 /* ConverdVCBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConverdVCBViewController.h; sourceTree = "<group>"; };
 		288DD4052181BFBB00B653B7 /* ConverdVCBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConverdVCBViewController.m; sourceTree = "<group>"; };
+		2896B3ED225C770600B6019F /* Gesture2TouchEventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gesture2TouchEventsViewController.h; sourceTree = "<group>"; };
+		2896B3EE225C770600B6019F /* Gesture2TouchEventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Gesture2TouchEventsViewController.m; sourceTree = "<group>"; };
+		2896B3F0225C772E00B6019F /* TapGesture2ndTouchEventView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapGesture2ndTouchEventView.h; sourceTree = "<group>"; };
+		2896B3F1225C772E00B6019F /* TapGesture2ndTouchEventView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapGesture2ndTouchEventView.m; sourceTree = "<group>"; };
 		28A28430213E716400ED2473 /* Present2HalfTransientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Present2HalfTransientViewController.h; sourceTree = "<group>"; };
 		28A28431213E716400ED2473 /* Present2HalfTransientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Present2HalfTransientViewController.m; sourceTree = "<group>"; };
 		28A28433213E718000ED2473 /* PresentedHalfTransientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentedHalfTransientViewController.h; sourceTree = "<group>"; };
@@ -763,6 +769,17 @@
 			path = CoveredVC;
 			sourceTree = "<group>";
 		};
+		2896B3EC225C76E800B6019F /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				2896B3ED225C770600B6019F /* Gesture2TouchEventsViewController.h */,
+				2896B3EE225C770600B6019F /* Gesture2TouchEventsViewController.m */,
+				2896B3F0225C772E00B6019F /* TapGesture2ndTouchEventView.h */,
+				2896B3F1225C772E00B6019F /* TapGesture2ndTouchEventView.m */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
 		28A2842F213E70E000ED2473 /* VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -879,6 +896,7 @@
 		28AD30ED20E720CB00525254 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				2896B3EC225C76E800B6019F /* Gestures */,
 				280C2DDE21493BBC006666C2 /* JS2ndOC */,
 				2885EECB211B172F0032426F /* runtime */,
 				2885EEC5211B08C50032426F /* xcode */,
@@ -1316,6 +1334,7 @@
 				2804717520EA440800A5FF2E /* BBAHisSugTagView.m in Sources */,
 				2846CA6520ECE520003D8943 /* TransitionBottomViewController.m in Sources */,
 				28FDD8D720EF891300C7A5ED /* UITableViewModelBaseCell.m in Sources */,
+				2896B3EF225C770600B6019F /* Gesture2TouchEventsViewController.m in Sources */,
 				28AD30E020E71F5300525254 /* MineNavVC.m in Sources */,
 				2802312C2140C27B00B3E4BC /* UIView+RuntimeConfigured.m in Sources */,
 				28AD30E320E71F9E00525254 /* ContactRootViewController.m in Sources */,
@@ -1362,6 +1381,7 @@
 				28A2843C213E88DF00ED2473 /* ConfiguredViewViewController.m in Sources */,
 				28AD30EC20E7209200525254 /* MainTabVC.m in Sources */,
 				28FDD8DA20EF89E200C7A5ED /* UITableViewBaseCell.m in Sources */,
+				2896B3F2225C772E00B6019F /* TapGesture2ndTouchEventView.m in Sources */,
 				2804717420EA440800A5FF2E /* BBASuggestionTagView.m in Sources */,
 				2846CA5F20EB578F003D8943 /* MarcosViewController.m in Sources */,
 				2804716B20EA440800A5FF2E /* BBAHisTagViewFactory.m in Sources */,
